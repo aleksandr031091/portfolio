@@ -1,6 +1,30 @@
 {
   "hero": {
     "title": "Касян Олександр",
-    "description": "Front-end розробник"
-  }
+    "description": "Front-end розробник",
+    "test": "asdasaaaa11zzz1qwe"
+  },
+  "projects": [
+    {
+      "title": "Морозиво",
+      "image": "ice-cream.jpg",
+      "description": "фыавыаыв",
+      "technology": "HTML, CSS",
+      "githubLink": "ываывфыаыва"
+    },
+    {
+      "title": "Морозиво",
+      "image": "ice-cream.jpg",
+      "description": "фыавыаыв",
+      "technology": "HTML, CSS",
+      "githubLink": "ываывфыаыва"
+    },
+    {
+      "title": "Морозиво",
+      "image": "ice-cream.jpg",
+      "description": "фыавыаыв",
+      "technology": "HTML, CSS",
+      "githubLink": "ываывфыаыва"
+    }
+  ]
 }

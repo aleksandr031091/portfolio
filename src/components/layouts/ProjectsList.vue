@@ -3,7 +3,7 @@
     <li
         class="projects_card"
         v-for="project in projects"
-        :key="project.title"
+        :key="project.image"
     >
       <img class="projects_card_image" :src="`/images/${project.image}`"/>
       <div class="projects_card_box">
@@ -11,24 +11,27 @@
         <p>{{ project.description }}</p>
         <p>{{ project.technology }}</p>
 
-        <base-btn class="btn">ewq</base-btn>
-        <router-link
-            class="router_link hover_text"
-            :to="project.githubLink"
-            target="_blank"
-        >
-          code
-        </router-link>
+<!--        <router-link-->
+<!--            class="router_link hover_text"-->
+<!--            :to="project.githubLink"-->
+<!--            target="_blank"-->
+<!--        >-->
+<!--          code-->
+<!--        </router-link>-->
+
+<!--        <router-link-->
+<!--          class="router_link hover_text"-->
+<!--          :to="project.githubLink"-->
+<!--          target="_blank"-->
+<!--        >-->
+<!--          site-->
+<!--        </router-link>-->
       </div>
-
-
     </li>
   </ul>
 </template>
 
 <script lang="ts" setup>
-
-
 import BaseBtn from "@/components/UI/BaseBtn.vue";
 
 defineProps({

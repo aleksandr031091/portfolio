@@ -2,5 +2,28 @@
   "hero": {
     "title": "Kasian Aleksandr",
     "description": "Front-end developer"
-  }
+  },
+  "projects": [
+    {
+      "title": "Ice-Cream",
+      "image": "ice-cream.jpg",
+      "description": "wadasdfafdsf",
+      "technology": "HTML, CSS",
+      "githubLink": "fdsdavml"
+    },
+    {
+      "title": "Ice-Creasdam",
+      "image": "ice-cream.jpg",
+      "description": "wadasdfafdsf",
+      "technology": "HTML, CSS",
+      "githubLink": "fdsdavml"
+    },
+    {
+      "title": "Ice-Creasdfsm",
+      "image": "ice-cream.jpg",
+      "description": "wadasdfafdsf",
+      "technology": "HTML, CSS",
+      "githubLink": "fdsdavml"
+    }
+  ]
 }

@@ -6,7 +6,7 @@
 
     <div class="container">
 
-      <projects-list :projects="projects"/>
+      <projects-list :projects="tm('projects')"/>
 
     </div>
   </section>
@@ -15,7 +15,9 @@
 <script lang="ts" setup>
 import LocaleSwitcher from "@/components/licale-switcher/LocaleSwitcher.vue";
 import ProjectsList from "@/components/layouts/ProjectsList.vue";
-import projects from '../../src/projects.json'
+// import projects from '../../src/projects.json'
+import {useI18n} from "vue-i18n";
+const { tm } = useI18n()
 </script>
 
 <style lang="scss" scoped>
