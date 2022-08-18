@@ -1,12 +1,10 @@
 <template>
-  <div>
     <header-block/>
     <main>
       <abaut-me/>
       <my-skills/>
     </main>
     <the-footer/>
-  </div>
 </template>
 
 <script setup>

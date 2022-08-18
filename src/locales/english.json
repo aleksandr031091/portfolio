@@ -5,21 +5,21 @@
   },
   "projects": [
     {
+      "title": "Lunch",
+      "image": "lunch.jpg",
+      "description": "Application for employees to order food from different cafes, personal account, order to a friend, reports for the period, operator account, administrator account",
+      "technology": "nuxt, sass, vuex, axios, vee-validate, date-picker,",
+      "githubLink": "fdsdavmsssl"
+    },
+    {
+      "title": "Book reading",
+      "image": "book-reading.jpg",
+      "description": "Application for reading books, where you can set goals for reading one or more books for a certain period, create a library, progress graph, workout mode, multilingual",
+      "technology": "HTML, CSS",
+      "githubLink": "fdsdavml"
+    },
+    {
       "title": "Ice-Cream",
-      "image": "ice-cream.jpg",
-      "description": "wadasdfafdsf",
-      "technology": "HTML, CSS",
-      "githubLink": "fdsdavml"
-    },
-    {
-      "title": "Ice-Creasdam",
-      "image": "ice-cream.jpg",
-      "description": "wadasdfafdsf",
-      "technology": "HTML, CSS",
-      "githubLink": "fdsdavml"
-    },
-    {
-      "title": "Ice-Creasdfsm",
       "image": "ice-cream.jpg",
       "description": "wadasdfafdsf",
       "technology": "HTML, CSS",

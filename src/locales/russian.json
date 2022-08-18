@@ -6,16 +6,16 @@
   },
   "projects": [
     {
-      "title": "Мороженое",
-      "image": "ice-cream.jpg",
-      "description": "фыавыаыв",
-      "technology": "HTML, CSS",
-      "githubLink": "ываываыва"
+      "title": "Обед",
+      "image": "lunch.jpg",
+      "description": "Приложение для сотрудников на заказ еды из разных кафе, личный кабинет, заказ другу, отчеты за период, кабинет оператора, кабинет администратора",
+      "technology": "HTML, CSS, SASS, NUXT",
+      "githubLink": "fdsdavmsssl"
     },
     {
-      "title": "Мороженое",
-      "image": "ice-cream.jpg",
-      "description": "фыавыаыв",
+      "title": "Чтение книг",
+      "image": "book-reading.jpg",
+      "description": "Приложение для чтения книг, где можно поставить цели на чтение одной или нескольких книг за определенный период, создать библиотеку, график прогресса, режим тренировки, мультиязычность",
       "technology": "HTML, CSS",
       "githubLink": "ываываыва"
     },

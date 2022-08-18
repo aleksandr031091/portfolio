@@ -6,16 +6,16 @@
   },
   "projects": [
     {
-      "title": "Морозиво",
-      "image": "ice-cream.jpg",
-      "description": "фыавыаыв",
-      "technology": "HTML, CSS",
-      "githubLink": "ываывфыаыва"
+      "title": "Обід",
+      "image": "lunch.jpg",
+      "description": "Додаток для співробітників для замовлення їжі з різних кафе, особистий кабінет, замовлення другу, звіти за період, обліковий запис оператора, обліковий запис адміністратора",
+      "technology": "HTML, CSS, SASS, NUXT",
+      "githubLink": "fdsdavmsssl"
     },
     {
-      "title": "Морозиво",
-      "image": "ice-cream.jpg",
-      "description": "фыавыаыв",
+      "title": "Читання книг",
+      "image": "book-reading.jpg",
+      "description": "Додаток для читання книг, де можна поставити цілі щодо читання однієї або кількох книг на певний період, створити бібліотеку, графік прогресу, режим тренування, багатомовність",
       "technology": "HTML, CSS",
       "githubLink": "ываывфыаыва"
     },
