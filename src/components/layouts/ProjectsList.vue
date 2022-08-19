@@ -5,36 +5,44 @@
       v-for="project in projects"
       :key="project.image"
     >
-      <img :src="`/images/${project.image}`" loading="lazy" alt="image of site" />
+      <img
+        class="card_image"
+        :src="`/images/${project.image}`"
+        loading="lazy"
+        alt="image of site"
+      />
 
       <div class="card_box">
-        <h3 class="card_box_title">{{ project.title }}</h3>
-        <p class="card_box_description">{{ project.description }}</p>
-        <p class="technology_description">
-          <span class="technology_title">Technology:</span>
-          {{ project.technology }}
-        </p>
-
-        <div class="link_wrapper">
-          <a
-            v-if="project.githubLink"
-            class="link"
-            :href="project.githubLink"
-            target="_blank"
-          >
-            code
-          </a>
-
-          <a
-            v-if="project.githubLink"
-            class="link"
-            :href="project.githubLink"
-            target="_blank"
-          >
-            site
-          </a>
+        <div>
+          <h3 class="card_box_title">{{ project.title }}</h3>
+          <p class="card_box_description">{{ project.description }}</p>
         </div>
 
+        <div>
+          <p class="technology_description">
+            <span class="technology_title">Technology:</span>
+            {{ project.technology }}
+          </p>
+          <div class="link_wrapper">
+            <a
+              v-if="project.githubLink"
+              class="link"
+              :href="project.githubLink"
+              target="_blank"
+            >
+              code
+            </a>
+
+            <a
+              v-if="project.githubLink"
+              class="link"
+              :href="project.githubLink"
+              target="_blank"
+            >
+              site
+            </a>
+          </div>
+        </div>
       </div>
     </li>
   </ul>
@@ -61,29 +69,38 @@ defineProps({
 
 <style lang="scss" scoped>
 .card {
-  position: relative;
-  width: 100%;
-  min-height: 228px;
+  //position: relative;
+  //width: 100%;
+  padding: 7px;
 
   &:not(:last-child) {
     margin-bottom: 30px;
   }
+  //border: 1px solid #22949A;
+  border-radius: 5px;
+  box-shadow: #22949A 0px 0px 0.25em, #22949A 0px 0.25em 1em;
+  //box-shadow: #22949A 0px 0px 5px 0px, #22949A 0px 0px 1px 0px;
+
+  &_image {
+    min-height: 228px;
+  }
 }
 
 .card_box {
-  position: absolute;
-  top: 0;
-  left: 0;
+  //top: 0;
+  //left: 0;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  padding: 5px;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.5),
-      rgba(47, 48, 58, 0.5)
-  );
+  justify-content: space-between;
+  padding: 10px 0;
+  min-height: 218px;
+  //width: 100%;
+  //height: 100%;
+  //background-color: #333333;
+  //background-image: linear-gradient(
+  //    rgba(47, 48, 58, 0.5),
+  //    rgba(47, 48, 58, 0.5)
+  //);
 
   &_title {
     font-weight: 500;
@@ -99,7 +116,7 @@ defineProps({
   }
 
   .technology_description {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     font-size: 15px;
 
     .technology_title {
@@ -112,7 +129,6 @@ defineProps({
   .link_wrapper {
     display: flex;
     justify-content: space-between;
-    width: 100%;
 
     .link {
       min-width: 100px;
@@ -130,13 +146,30 @@ defineProps({
 }
 
 @include for-size(tablet) {
+  .list_card {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+
   .card {
-    min-height: 417px;
+    margin-top: 20px;
+    margin-left: 20px;
+    width: calc((100% / 2) - 20px);
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  .card_image {
+    //min-height: 417px;
   }
 }
 
 @include for-size(desktop) {
-  .card {
+  .card_image {
     min-height: 577px;
   }
 }
