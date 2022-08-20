@@ -20,11 +20,39 @@
       "githubLink": "ываывфыаыва"
     },
     {
+      "title": " Дітям подобається",
+      "image": "kids-like.jpg",
+      "description": "Додаток для дітей, який розвиває здорові звички, де батьки можуть створювати завдання на тиждень і винагороди за виконання завдань, дитина отримує бали, за які вона може вибрати винагороду",
+      "technology": "HTML, CSS",
+      "githubLink": "ываывфыаыва"
+    },
+    {
+      "title": "Події",
+      "image": "events.jpg",
+      "description": "Додаток для пошуку крутих подій, по всьому світу, з можливістю покупки квитків",
+      "technology": "HTML, CSS",
+      "githubLink": "ываывфыаыва"
+    },
+    {
+      "title": "Фільмотека",
+      "image": "filmoteka.jpg",
+      "description": "Додаток для пошуку фільмів, кожен може знайти потрібний фільм для себе, з рейтингом, описом і переглядом трейлера",
+      "technology": "HTML, CSS",
+      "githubLink": "ываывфыаыва"
+    },
+    {
       "title": "Морозиво",
       "image": "ice-cream.jpg",
       "description": "фыавыаыв",
       "technology": "HTML, CSS",
       "githubLink": "ываывфыаыва"
+    },
+    {
+      "title": "Star wars",
+      "image": "star-wars.jpg",
+      "description": "",
+      "technology": "vue",
+      "githubLink": "fdsdavml"
     }
   ]
 }

@@ -20,11 +20,39 @@
       "githubLink": "ываываыва"
     },
     {
+      "title": "Детям нравится",
+      "image": "Kids-Like.jpg",
+      "description": "Приложение для детей, развивающее здоровые привычки, где родители могут создавать задания на неделю и награды за выполнение заданий, ребенок получает баллы, за которые он может выбрать награду",
+      "technology": "HTML, CSS",
+      "githubLink": "ываываыва"
+    },
+    {
+      "title": "События",
+      "image": "events.jpg",
+      "description": "Приложение для поиска крутых событий, по всему миру, с возможностью купить билеты",
+      "technology": "javaScript",
+      "githubLink": "ываываыва"
+    },
+    {
+      "title": "Фильмотека",
+      "image": "filmoteka.jpg",
+      "description": "Приложение для поиска фильмов, каждый сможет найти нужный фильм для себя, с рейтингом, описанием и просмотром трейлера",
+      "technology": "javaScript",
+      "githubLink": "ываываыва"
+    },
+    {
       "title": "Мороженое",
       "image": "ice-cream.jpg",
       "description": "фыавыаыв",
-      "technology": "HTML, CSS",
+      "technology": "HTML, CSS, sass",
       "githubLink": "ываываыва"
+    },
+    {
+      "title": "Star wars",
+      "image": "star-wars.jpg",
+      "description": "",
+      "technology": "vue",
+      "githubLink": "fdsdavml"
     }
   ]
 }

@@ -69,17 +69,13 @@ defineProps({
 
 <style lang="scss" scoped>
 .card {
-  //position: relative;
-  //width: 100%;
   padding: 7px;
+  border-radius: 5px;
+  box-shadow: #22949A 0px 0px 0.25em, #22949A 0px 0.25em 1em;
 
   &:not(:last-child) {
     margin-bottom: 30px;
   }
-  //border: 1px solid #22949A;
-  border-radius: 5px;
-  box-shadow: #22949A 0px 0px 0.25em, #22949A 0px 0.25em 1em;
-  //box-shadow: #22949A 0px 0px 5px 0px, #22949A 0px 0px 1px 0px;
 
   &_image {
     min-height: 228px;
@@ -87,20 +83,11 @@ defineProps({
 }
 
 .card_box {
-  //top: 0;
-  //left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 10px 0;
   min-height: 218px;
-  //width: 100%;
-  //height: 100%;
-  //background-color: #333333;
-  //background-image: linear-gradient(
-  //    rgba(47, 48, 58, 0.5),
-  //    rgba(47, 48, 58, 0.5)
-  //);
 
   &_title {
     font-weight: 500;
@@ -149,28 +136,75 @@ defineProps({
   .list_card {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -20px;
-    margin-left: -20px;
+    margin: -20px 0 0 -20px;
   }
 
   .card {
-    margin-top: 20px;
-    margin-left: 20px;
+    margin: 20px 0 0 20px;
     width: calc((100% / 2) - 20px);
 
     &:not(:last-child) {
       margin-bottom: 0;
     }
   }
-
-  .card_image {
-    //min-height: 417px;
-  }
 }
 
 @include for-size(desktop) {
-  .card_image {
-    min-height: 577px;
+  .list_card{
+    margin: 0;
+
+
+    .card{
+      position: relative;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow: hidden;
+
+      box-shadow: #22949A 0px 0px 0.25em, #22949A 0px 0.25em 1em;
+
+
+      transition: 800ms;
+      transform:
+        perspective(2000px)
+        //rotateY(0deg)
+        rotateX(30deg)
+        //rotate(-5deg)
+        scale(0.8);
+
+
+      &:hover{
+        transform:
+          rotateY(0deg)
+          rotateX(0deg)
+          scale(1)
+          translateY(5px);
+        .card_box{
+          bottom: 0;
+        }
+      }
+
+      &_image {
+        min-height: 577px;
+      }
+    }
+
+    .card_box{
+      position: absolute;
+      bottom: -250px;
+      left: 0;
+      padding: 20px 10px 10px;
+      width: 100%;
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.8),
+          rgba(47, 48, 58, 0.8)
+      );
+      transition: 800ms;
+
+      &_description{
+        margin-bottom: 15px;
+      }
+    }
   }
 }
 </style>

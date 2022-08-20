@@ -95,7 +95,6 @@ import BaseIcon from "@/components/UI/BaseIcon.vue";
     font-size: 18px;
     line-height: 20px;
     color: $secondary_text_color;
-    //text-decoration: none; // text decorations are clipped in WebKit browsers
 
     &:not(:last-child) {
       margin-bottom: 10px;
@@ -141,12 +140,11 @@ import BaseIcon from "@/components/UI/BaseIcon.vue";
 
 @include for-size(tablet) {
   .section_footer {
-    padding: 50px 0;
+    padding-bottom: 50px;
   }
 
   .footer {
     display: flex;
-    //align-items: center;
     justify-content: space-between;
   }
 
@@ -155,8 +153,6 @@ import BaseIcon from "@/components/UI/BaseIcon.vue";
     margin: 0;
 
     .contact_link{
-      font-size: 21px;
-      line-height: 27px;
 
       &:first-child{
         margin-bottom: 15px;

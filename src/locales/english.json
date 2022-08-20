@@ -11,18 +11,47 @@
       "technology": "nuxt, sass, vuex, axios, vee-validate, date-picker,",
       "githubLink": "fdsdavmsssl"
     },
+
     {
       "title": "Book reading",
       "image": "book-reading.jpg",
       "description": "Application for reading books, where you can set goals for reading one or more books for a certain period, create a library, progress graph, workout mode, multilingual",
-      "technology": "HTML, CSS",
+      "technology": "react, node, express, mongoDB, i18n",
+      "githubLink": "fdsdavml"
+    },
+    {
+      "title": "KidsLike",
+      "image": "Kids-Like.jpg",
+      "description": "Application for children that develops healthy habits, where parents can create tasks for the week and rewards for completing tasks, the child receives points for which he can choose a reward",
+      "technology": "react",
+      "githubLink": "fdsdavml"
+    },
+    {
+      "title": "Events",
+      "image": "events.jpg",
+      "description": "Application for finding cool events, around the world, with the ability to buy tickets",
+      "technology": "html, css",
+      "githubLink": "fdsdavml"
+    },
+    {
+      "title": "Filmoteka",
+      "image": "filmoteka.jpg",
+      "description": "Application for finding movies, everyone can find the right movie for themselves, with ratings, descriptions and watching the trailer",
+      "technology": "html, css",
       "githubLink": "fdsdavml"
     },
     {
       "title": "Ice-Cream",
       "image": "ice-cream.jpg",
       "description": "wadasdfafdsf",
-      "technology": "HTML, CSS",
+      "technology": "html, css",
+      "githubLink": "fdsdavml"
+    },
+    {
+      "title": "Star wars",
+      "image": "star-wars.jpg",
+      "description": "",
+      "technology": "vue",
       "githubLink": "fdsdavml"
     }
   ]
