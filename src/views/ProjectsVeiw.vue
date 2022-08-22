@@ -1,7 +1,7 @@
 <template>
 
-  <locale-switcher/>
-
+<!--  <locale-switcher/>-->
+  <the-header/>
   <section class="section">
 
     <div class="container">
@@ -16,9 +16,9 @@
 <script lang="ts" setup>
 import LocaleSwitcher from "@/components/licale-switcher/LocaleSwitcher.vue";
 import ProjectsList from "@/components/layouts/ProjectsList.vue";
-// import projects from '../../src/projects.json'
-import {useI18n} from "vue-i18n";
 import TheFooter from "@/components/footer/TheFooter.vue";
+import {useI18n} from "vue-i18n";
+import TheHeader from "@/components/header/TheHeader.vue";
 const { tm } = useI18n()
 </script>
 

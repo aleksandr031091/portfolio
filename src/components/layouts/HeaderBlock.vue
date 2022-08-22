@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <the-header/>
+    <the-header class="header"/>
     <the-hero/>
   </div>
 </template>
@@ -15,5 +15,9 @@ import TheHero from "@/components/hero/TheHero.vue";
   position: sticky;
   top: 0;
   background-color: $accent_background_color;
+
+  .header{
+    background-image: linear-gradient(rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.3));
+  }
 }
 </style>

@@ -1,33 +1,33 @@
 <template>
   <div
-      @click="onClickDropdown"
-      class="switch_btn"
+    @click="onClickDropdown"
+    class="switch_btn"
   >
     <base-icon
-        class="flag_icon"
-        :name="`flag-${$i18n.locale}`"
+      class="flag_icon"
+      :name="`flag-${$i18n.locale}`"
     />
 
     <base-icon
-        :class="{dropdown_icon: true,isOpenList}"
-        name="dropdown-icon"
-        color="#ffffff"
+      :class="{dropdown_icon: true,isOpenList}"
+      name="dropdown-icon"
+      color="#ffffff"
     />
 
     <Transition name="dropdown-fade">
       <ul
-          class="local_list"
-          v-if="isOpenList"
+        class="local_list"
+        v-if="isOpenList"
       >
         <li
-            class="local_list_item hover_text"
-            @click="onChangeLocale(locale)"
-            v-for="locale in $i18n.availableLocales"
-            :key="locale"
+          class="local_list_item hover_text"
+          @click="onChangeLocale(locale)"
+          v-for="locale in tm('locales')"
+          :key="locale"
         >
           <base-icon
-              class="flag_icon"
-              :name="`flag-${locale}`"
+            class="flag_icon"
+            :name="`flag-${locale}`"
           />
           {{ locale }}
         </li>
@@ -37,21 +37,35 @@
 </template>
 
 <script lang="ts" setup>
-import {useI18n} from "vue-i18n";
+import { useI18n } from "vue-i18n";
 import BaseIcon from "@/components/UI/BaseIcon.vue";
-import {ref} from "vue";
+import { ref } from "vue";
 
-const {locale} = useI18n()
-
-const isOpenList = ref(false)
-
-const onClickDropdown = (e: string) => {
-  isOpenList.value = !isOpenList.value
-}
-
+const { locale, tm } = useI18n();
 const onChangeLocale = (lang: string) => {
-  locale.value = lang
-}
+  switch (lang) {
+    case "английский":
+    case "англійська":
+      locale.value = "english";
+      break;
+    case "русский":
+    case "російська":
+      locale.value = "russian";
+      break;
+    case "украинский":
+    case "українська":
+      locale.value = "ukraine";
+      break;
+    default:
+      locale.value = lang;
+  }
+};
+
+const isOpenList = ref(false);
+const onClickDropdown = () => {
+  isOpenList.value = !isOpenList.value;
+};
+
 </script>
 
 <style lang="scss" scoped>
@@ -62,7 +76,6 @@ const onChangeLocale = (lang: string) => {
   color: $secondary_text_color;
   background-color: transparent;
   border: none;
-  padding: 0 0 0 10px;
 
   .flag_icon {
     margin-right: 5px;
@@ -82,8 +95,6 @@ const onChangeLocale = (lang: string) => {
 .local_list {
   position: absolute;
   top: calc(100% + 10px);
-  left: 12px;
-
   z-index: 1;
 
   &_item {
@@ -100,11 +111,8 @@ const onChangeLocale = (lang: string) => {
 }
 
 @include for-size(tablet) {
-  .switch_btn{
-    padding: 0;
-  }
 
-  .local_list{
+  .local_list {
     left: 0;
   }
 }

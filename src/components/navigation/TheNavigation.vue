@@ -2,36 +2,36 @@
 
   <nav>
     <button
-        class="menu_btn"
-        @click="onClickMenu"
+      class="menu_btn"
+      @click="onClickMenu"
     >
       <base-icon
-          v-if="!isOpenRouteList"
-          name="menu"
-          color="#ffffff"
+        v-if="!isOpenRouteList"
+        name="menu"
+        color="#ffffff"
       />
       <base-icon
-          v-if="isOpenRouteList"
-          name="close"
-          color="#ffffff"
+        v-if="isOpenRouteList"
+        name="close"
+        color="#ffffff"
       />
     </button>
 
     <Transition name="dropdown-fade">
       <ul
-          class="navigation_list_mobile"
-          v-if="isOpenRouteList"
+        class="navigation_list_mobile"
+        v-if="isOpenRouteList"
       >
         <li
-            class="navigation_list_mobile_item"
-            v-for="link in linkOptions"
+          class="navigation_list_mobile_item"
+          v-for="nav in tm('navigation')"
         >
           <router-link
-              class="router_link hover_text"
-              :to="link.path"
-              :key="link.path"
+            class="router_link hover_text"
+            :to="nav.path"
+            :key="nav.path"
           >
-            {{ link.name }}
+            {{ nav.name }}
           </router-link>
         </li>
       </ul>
@@ -39,12 +39,12 @@
 
     <ul class="navigation_list">
       <li
-          class="navigation_list_item"
-          v-for="link in linkOptions"
+        class="navigation_list_item"
+        v-for="link in tm('navigation')"
       >
         <router-link
-            class="router_link hover_text"
-            :to="link.path"
+          class="router_link hover_text"
+          :to="link.path"
         >
           {{ link.name }}
         </router-link>
@@ -55,29 +55,16 @@
 
 <script lang="ts" setup>
 import BaseIcon from "@/components/UI/BaseIcon.vue";
-import {ref} from "vue";
+import { ref } from "vue";
 
-const linkOptions = [
-  {
-    path: '/projects',
-    name: 'Projects'
-  }, {
-    path: '#my-skills',
-    name: 'My skills'
-  }, {
-    path: '#about-me',
-    name: 'About me'
-  }, {
-    path: '#footer',
-    name: 'Contacts me'
-  }
-]
+import { useI18n } from "vue-i18n";
+const { tm } = useI18n();
 
-const isOpenRouteList = ref(false)
+const isOpenRouteList = ref(false);
 
 const onClickMenu = () => {
-  isOpenRouteList.value = !isOpenRouteList.value
-}
+  isOpenRouteList.value = !isOpenRouteList.value;
+};
 </script>
 
 <style lang="scss" scoped>
@@ -88,9 +75,10 @@ const onClickMenu = () => {
 }
 
 .menu_btn {
-  padding: 0px;
+  padding: 8px;
   background-color: transparent;
-  border: none;
+  border: 1px solid white;
+  border-radius: 50%;
 }
 
 .navigation_list_mobile {
@@ -99,7 +87,7 @@ const onClickMenu = () => {
   flex-direction: column;
   align-items: flex-end;
   top: calc(100% + 10px);
-  right: 4px;
+  right: 0;
   width: 200px;
   z-index: 1;
 

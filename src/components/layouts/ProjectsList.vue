@@ -167,9 +167,7 @@ defineProps({
       transition: 800ms;
       transform:
         perspective(2000px)
-        //rotateY(0deg)
         rotateX(30deg)
-        //rotate(-5deg)
         scale(0.8);
 
 
@@ -199,7 +197,7 @@ defineProps({
           rgba(47, 48, 58, 0.8),
           rgba(47, 48, 58, 0.8)
       );
-      transition: 800ms;
+      transition: 500ms;
 
       &_description{
         margin-bottom: 15px;

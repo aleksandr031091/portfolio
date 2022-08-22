@@ -4,6 +4,9 @@
     "description": "Front-end розробник",
     "test": "asdasaaaa11zzz1qwe"
   },
+  "footer": {
+    "profileTitle": "Профілі"
+  },
   "projects": [
     {
       "title": "Обід",
@@ -48,11 +51,34 @@
       "githubLink": "ываывфыаыва"
     },
     {
-      "title": "Star wars",
+      "title": "Зоряні війни",
       "image": "star-wars.jpg",
       "description": "",
       "technology": "vue",
       "githubLink": "fdsdavml"
     }
+  ],
+  "navigation": [
+    {
+      "path": "/projects",
+      "name": "Проекти"
+    },
+    {
+      "path": "#technology",
+      "name": "Технології"
+    },
+    {
+      "path": "#about-me",
+      "name": "Про мене"
+    },
+    {
+      "path": "#footer",
+      "name": "Мої контакти"
+    }
+  ],
+  "locales": [
+    "англійська",
+    "російська",
+    "українська"
   ]
 }

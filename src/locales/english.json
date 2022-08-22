@@ -3,6 +3,9 @@
     "title": "Kasian Aleksandr",
     "description": "Front-end developer"
   },
+  "footer": {
+    "profileTitle": "Profiles"
+  },
   "projects": [
     {
       "title": "Lunch",
@@ -11,7 +14,6 @@
       "technology": "nuxt, sass, vuex, axios, vee-validate, date-picker,",
       "githubLink": "fdsdavmsssl"
     },
-
     {
       "title": "Book reading",
       "image": "book-reading.jpg",
@@ -54,5 +56,28 @@
       "technology": "vue",
       "githubLink": "fdsdavml"
     }
+  ],
+  "navigation": [
+    {
+      "path": "/projects",
+      "name": "Projects"
+    },
+    {
+      "path": "#technology",
+      "name": "Technology"
+    },
+    {
+      "path": "#about-me",
+      "name": "About me"
+    },
+    {
+      "path": "#footer",
+      "name": "My contacts"
+    }
+  ],
+  "locales": [
+    "english",
+    "russian",
+    "ukraine"
   ]
 }

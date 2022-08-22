@@ -23,7 +23,7 @@
         </div>
 
         <div class="social_wrapper">
-          <p class="social_title">Profiles</p>
+          <p class="social_title">{{$t('footer.profileTitle')}}</p>
           <div class="icon_box">
             <a
                 class="icon_box_item"
@@ -79,9 +79,8 @@ import BaseIcon from "@/components/UI/BaseIcon.vue";
 
 <style lang="scss" scoped>
 .section_footer {
-  padding: 20px 0;
+  padding: 0 0 20px;
 }
-
 
 .contact_link_wrapper {
   display: flex;
@@ -140,7 +139,7 @@ import BaseIcon from "@/components/UI/BaseIcon.vue";
 
 @include for-size(tablet) {
   .section_footer {
-    padding-bottom: 50px;
+    padding: 0 0 50px;
   }
 
   .footer {
@@ -172,9 +171,4 @@ import BaseIcon from "@/components/UI/BaseIcon.vue";
     }
   }
 }
-
-@include for-size(desktop) {
-
-}
-
 </style>
