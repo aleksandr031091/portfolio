@@ -166,8 +166,10 @@ defineProps({
 
       transition: 800ms;
       transform:
-        perspective(2000px)
+        perspective(3000px)
         rotateX(30deg)
+        rotateY(10deg)
+        rotate(-10deg)
         scale(0.8);
 
 

@@ -1,18 +1,38 @@
 <template>
-  <header-block />
+  <div class="wrapper">
+    <div class="header_wrapper">
+      <the-header />
+    </div>
+    <the-hero />
+  </div>
+
   <main>
-    <abaut-me />
-    <my-technology />
+    <about-me />
+    <MySkills />
   </main>
+
   <the-footer />
 </template>
 
 <script setup>
-import AbautMe from "@/components/abaut-me/AbautMe.vue";
-import HeaderBlock from "@/components/layouts/HeaderBlock.vue";
+import AboutMe from "@/components/about-me/AboutMe.vue";
 import TheFooter from "@/components/footer/TheFooter.vue";
-import MyTechnology from "@/components/technology/MyTechnology.vue";
+import MySkills from "@/components/skills/MySkills.vue";
+import TheHeader from "@/components/header/TheHeader.vue";
+import TheHero from "@/components/hero/TheHero.vue";
 </script>
 
+<style lang="scss" scoped>
+.wrapper {
+  position: sticky;
+  top: 0;
+  background-color: $accent_background_color;
+
+  .header_wrapper {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.3));
+    width: 100%;
+  }
+}
+</style>
 
 

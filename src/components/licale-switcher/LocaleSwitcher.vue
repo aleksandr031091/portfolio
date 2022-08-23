@@ -1,7 +1,8 @@
 <template>
   <div
-    @click="onClickDropdown"
     class="switch_btn"
+    @click="onClickDropdown"
+    v-click-outside="onClickOutside"
   >
     <base-icon
       class="flag_icon"
@@ -66,6 +67,9 @@ const onClickDropdown = () => {
   isOpenList.value = !isOpenList.value;
 };
 
+const onClickOutside = () => {
+  isOpenList.value = false;
+};
 </script>
 
 <style lang="scss" scoped>

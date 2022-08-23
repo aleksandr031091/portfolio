@@ -1,55 +1,28 @@
 <template>
-
   <nav>
     <button
       class="menu_btn"
       @click="onClickMenu"
+      v-click-outside="onClickOutside"
     >
       <base-icon
-        v-if="!isOpenRouteList"
+        v-if="!isOpenList"
         name="menu"
         color="#ffffff"
       />
       <base-icon
-        v-if="isOpenRouteList"
+        v-if="isOpenList"
         name="close"
         color="#ffffff"
       />
     </button>
 
-    <Transition name="dropdown-fade">
-      <ul
-        class="navigation_list_mobile"
-        v-if="isOpenRouteList"
-      >
-        <li
-          class="navigation_list_mobile_item"
-          v-for="nav in tm('navigation')"
-        >
-          <router-link
-            class="router_link hover_text"
-            :to="nav.path"
-            :key="nav.path"
-          >
-            {{ nav.name }}
-          </router-link>
-        </li>
-      </ul>
-    </Transition>
+    <navigation-mobile
+      :navList="tm('navigation')"
+      :isOpenList="isOpenList"
+    />
+    <navigation-desktop :navList="tm('navigation')" />
 
-    <ul class="navigation_list">
-      <li
-        class="navigation_list_item"
-        v-for="link in tm('navigation')"
-      >
-        <router-link
-          class="router_link hover_text"
-          :to="link.path"
-        >
-          {{ link.name }}
-        </router-link>
-      </li>
-    </ul>
   </nav>
 </template>
 
@@ -58,22 +31,23 @@ import BaseIcon from "@/components/UI/BaseIcon.vue";
 import { ref } from "vue";
 
 import { useI18n } from "vue-i18n";
+import NavigationMobile from "@/components/navigation/NavigationMobile.vue";
+import NavigationDesktop from "@/components/navigation/NavigationDesktop.vue";
+
 const { tm } = useI18n();
 
-const isOpenRouteList = ref(false);
+const isOpenList = ref(false);
 
 const onClickMenu = () => {
-  isOpenRouteList.value = !isOpenRouteList.value;
+  isOpenList.value = !isOpenList.value;
+};
+
+const onClickOutside = () => {
+  isOpenList.value = false;
 };
 </script>
 
 <style lang="scss" scoped>
-
-
-.navigation_list {
-  display: none;
-}
-
 .menu_btn {
   padding: 8px;
   background-color: transparent;
@@ -81,49 +55,9 @@ const onClickMenu = () => {
   border-radius: 50%;
 }
 
-.navigation_list_mobile {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  top: calc(100% + 10px);
-  right: 0;
-  width: 200px;
-  z-index: 1;
-
-  &_item {
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
-  }
-}
-
-.router_link {
-  font-size: 18px;
-  line-height: 20px;
-  color: $secondary_text_color;
-  overflow: hidden;
-  text-decoration: none;
-}
-
 @include for-size(tablet) {
   .menu_btn {
     display: none;
-  }
-
-  .navigation_list_mobile {
-    display: none;
-  }
-
-  .navigation_list {
-    display: flex;
-    margin-left: auto;
-
-    &_item {
-      &:not(:last-child) {
-        margin-right: 35px;
-      }
-    }
   }
 }
 </style>

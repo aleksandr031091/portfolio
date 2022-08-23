@@ -6,14 +6,6 @@
     </div>
   </section>
 </template>
-<!--<script lang="ts" setup>-->
-
-<!--import {useI18n} from "vue-i18n";-->
-<!--const { locale } = useI18n()-->
-<!--const qwe = () => {-->
-<!--  locale.value = 'en'-->
-<!--}-->
-<!--</script>-->
 
 <style lang="scss" scoped>
 
@@ -21,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: calc(100vh - 72px);
+  height: calc(100vh - 73px);
   text-align: center;
   background-repeat: no-repeat;
   background-size: 150%;
