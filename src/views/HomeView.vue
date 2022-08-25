@@ -29,7 +29,7 @@ import TheHero from "@/components/hero/TheHero.vue";
   background-color: $accent_background_color;
 
   .header_wrapper {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.3), rgba(47, 48, 58, 0.3));
+    background-image: $linear_gradient;
     width: 100%;
   }
 }

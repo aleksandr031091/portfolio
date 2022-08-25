@@ -1,68 +1,60 @@
 <template>
   <section
-      class="section section_footer"
-      id="footer"
+    class="section"
+    id="footer"
   >
     <div class="container">
       <footer class="footer">
 
         <div class="contact_link_wrapper">
           <a
-              class="contact_link hover_text"
-              href="mailto:aleksandrkasian0310@gmail.com"
+            class="contact_link hover_text"
+            href="mailto:aleksandrkasian0310@gmail.com"
           >
             aleksandrkasian0310@gmail.com
           </a>
 
           <a
-              class="contact_link hover_text"
-              href="tel:+380664696686"
+            class="contact_link hover_text"
+            href="tel:+380664696686"
           >
             +380664696686
           </a>
         </div>
 
         <div class="social_wrapper">
-          <p class="social_title">{{$t('footer.profileTitle')}}</p>
+          <p class="social_title">{{ $t("footer.profileTitle") }}</p>
           <div class="icon_box">
             <a
-                class="icon_box_item"
-                target="_blank"
-                href="https://github.com/aleksandr031091"
+              class="icon_box_item"
+              target="_blank"
+              href="https://github.com/aleksandr031091"
             >
-              <base-icon
-                  name="git"
-              />
+              <base-icon name="gitHub" />
             </a>
 
             <a
-                class="icon_box_item"
-                target="_blank"
-                href="https://www.linkedin.com/in/aleksandr-kasian-0310/"
+              class="icon_box_item"
+              target="_blank"
+              href="https://www.linkedin.com/in/aleksandr-kasian-0310/"
             >
-              <base-icon
-                  name="link-in"
-              />
+              <base-icon name="link-in" />
             </a>
 
             <a
-                class="icon_box_item"
-                target="_blank"
-                href="https://www.instagram.com/vsenamnogoproshe/"
+              class="icon_box_item"
+              target="_blank"
+              href="https://www.instagram.com/vsenamnogoproshe/"
             >
-              <base-icon
-                  name="instagram"
-              />
+              <base-icon name="instagram" />
             </a>
 
             <a
-                class="icon_box_item"
-                target="_blank"
-                href="https://www.facebook.com/profile.php?id=100015199141489"
+              class="icon_box_item"
+              target="_blank"
+              href="https://www.facebook.com/profile.php?id=100015199141489"
             >
-              <base-icon
-                  name="facebook"
-              />
+              <base-icon name="facebook" />
             </a>
           </div>
         </div>
@@ -78,9 +70,6 @@ import BaseIcon from "@/components/UI/BaseIcon.vue";
 </script>
 
 <style lang="scss" scoped>
-.section_footer {
-  padding: 0 0 20px;
-}
 
 .contact_link_wrapper {
   display: flex;
@@ -93,7 +82,6 @@ import BaseIcon from "@/components/UI/BaseIcon.vue";
     align-items: center;
     font-size: 18px;
     line-height: 20px;
-    color: $secondary_text_color;
 
     &:not(:last-child) {
       margin-bottom: 10px;
@@ -138,9 +126,6 @@ import BaseIcon from "@/components/UI/BaseIcon.vue";
 }
 
 @include for-size(tablet) {
-  .section_footer {
-    padding: 0 0 50px;
-  }
 
   .footer {
     display: flex;
@@ -151,9 +136,9 @@ import BaseIcon from "@/components/UI/BaseIcon.vue";
     align-items: flex-start;
     margin: 0;
 
-    .contact_link{
+    .contact_link {
 
-      &:first-child{
+      &:first-child {
         margin-bottom: 15px;
       }
     }
@@ -162,11 +147,11 @@ import BaseIcon from "@/components/UI/BaseIcon.vue";
   .social_wrapper {
     flex-direction: row;
 
-    .social_title{
+    .social_title {
       margin: 0 20px 0;
     }
 
-    .icon_box_item:not(:last-child){
+    .icon_box_item:not(:last-child) {
       margin-right: 20px;
     }
   }

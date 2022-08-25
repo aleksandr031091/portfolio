@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Касян Олександр",
-    "description": "Front-end розробник",
+    "description": "Фронт-енд розробник",
     "test": "asdasaaaa11zzz1qwe"
   },
   "footer": {
@@ -59,6 +59,10 @@
     }
   ],
   "navigation": [
+    {
+      "path": "/",
+      "name": "Головна"
+    },
     {
       "path": "/projects",
       "name": "Проекти"

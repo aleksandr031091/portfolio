@@ -41,7 +41,7 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: 'Nunito', sans-serif;
-  color: $secondary_text_color;
+  color: $text_color;
   background-color: #111111;
 }
 
@@ -60,8 +60,14 @@ body {
   opacity: 0;
 }
 
+.router_link {
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
 .hover_text{
-  background: linear-gradient(to right, $accent_text_color, $accent_text_color 50%, $secondary_text_color 50%);
+  background: linear-gradient(to right, $accent_color, $accent_color 50%, $text_color 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;

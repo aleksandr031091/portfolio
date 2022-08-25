@@ -49,7 +49,6 @@
 </template>
 
 <script lang="ts" setup>
-import BaseBtn from "@/components/UI/BaseBtn.vue";
 
 defineProps({
   projects: {
@@ -121,12 +120,9 @@ defineProps({
       min-width: 100px;
       text-align: center;
       padding: 10px 20px;
-      color: $secondary_text_color;
+      color: $text_color;
       background-color: $accent_color;
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.5),
-          rgba(47, 48, 58, 0.5)
-      );
+      background-image: $linear_gradient;
       border-radius: 100%;
     }
   }
@@ -150,36 +146,27 @@ defineProps({
 }
 
 @include for-size(desktop) {
-  .list_card{
+  .list_card {
     margin: 0;
 
 
-    .card{
+    .card {
       position: relative;
       margin: 0;
       padding: 0;
       width: 100%;
-      overflow: hidden;
-
-      box-shadow: #22949A 0px 0px 0.25em, #22949A 0px 0.25em 1em;
-
+      border-radius: 0;
+      box-shadow: -25px 25px 118px 6px rgba(34, 148, 154, 1),;
 
       transition: 800ms;
-      transform:
-        perspective(3000px)
-        rotateX(30deg)
-        rotateY(10deg)
-        rotate(-10deg)
-        scale(0.8);
+      transform: perspective(3000px) rotateX(35deg) rotateY(10deg) rotate(-10deg) skew(5deg) scale(0.8);
+      overflow: hidden;
 
+      &:hover {
+        box-shadow: #22949A 0px 0px 0.25em, #22949A 0px 0.25em 1em;
+        transform: rotateY(0deg) rotateX(0deg) scale(1) translateY(5px);
 
-      &:hover{
-        transform:
-          rotateY(0deg)
-          rotateX(0deg)
-          scale(1)
-          translateY(5px);
-        .card_box{
+        .card_box {
           bottom: 0;
         }
       }
@@ -189,19 +176,16 @@ defineProps({
       }
     }
 
-    .card_box{
+    .card_box {
       position: absolute;
       bottom: -250px;
       left: 0;
       padding: 20px 10px 10px;
       width: 100%;
-      background-image: linear-gradient(
-          rgba(47, 48, 58, 0.8),
-          rgba(47, 48, 58, 0.8)
-      );
+      background-image: $linear_gradient;
       transition: 500ms;
 
-      &_description{
+      &_description {
         margin-bottom: 15px;
       }
     }

@@ -44,7 +44,8 @@
   overflow: hidden;
   padding: 0;
 
-  box-shadow: inset 0px 10px 12px -12px $accent_color
+  box-shadow: inset 0px 10px 12px -12px $accent_color;
+
 }
 
 .container_about {
@@ -57,7 +58,7 @@
   .my_description {
     position: static;
     padding: 0 10px;
-    color: $secondary_text_color;
+    //color: $secondary_text_color;
     text-align: center;
 
   }
@@ -72,6 +73,7 @@
 
   .section_about {
     height: 100vh;
+
   }
 
   .container_about {
@@ -85,7 +87,7 @@
       left: 0;
       min-width: 500px;
       height: 500px;
-    //background-color: grey;
+      //background-color: grey;
     }
 
     .my_description {
@@ -102,8 +104,11 @@
 }
 
 @include for-size(desktop) {
-
-
+  .section_about {
+    background-image: url("/images/quadrocopter-1658967_640-2.png");
+    background-repeat: no-repeat;
+    background-position: 105% 100%;
+  }
 }
 
 

@@ -59,6 +59,10 @@
   ],
   "navigation": [
     {
+      "path": "/",
+      "name": "Home"
+    },
+    {
       "path": "/projects",
       "name": "Projects"
     },

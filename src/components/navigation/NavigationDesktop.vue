@@ -29,14 +29,6 @@ defineProps({
 </script>
 
 <style lang="scss" scoped>
-.router_link {
-  font-size: 18px;
-  line-height: 20px;
-  color: $secondary_text_color;
-  overflow: hidden;
-  text-decoration: none;
-}
-
 .navigation_list {
   display: none;
 }

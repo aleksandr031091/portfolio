@@ -68,8 +68,8 @@
           42.28 6.28 25 23.563Z" />
     </svg>
 
-    <svg v-if="$props.name === 'js'" fill="none" height="50" width="50" xmlns="http://www.w3.org/2000/svg"
-         viewBox="0 0 150 150">
+    <svg v-if="$props.name === 'javaScript'" fill="none" height="50" width="50" xmlns="http://www.w3.org/2000/svg"
+         viewBox="0 0 124 141.532">
       <path d="M10.383 126.894 0 0l124 .255-10.979 126.639-50.553 14.638z" fill="#e9ca32" />
       <path d="M62.468 129.277V12.085l51.064.17-9.106 104.851z" fill="#ffde25" />
       <path
@@ -97,7 +97,7 @@
       <path d="M50.56 0 128 133.12 204.8 0h-47.36L128 51.2 97.92 0H50.56z" fill="#35495E" />
     </svg>
 
-    <svg v-if="$props.name === 'ts'" height="50" width="50" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
+    <svg v-if="$props.name === 'typeScript'" height="50" width="50" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h640v640H0z" fill="#017acb" />
       <path d="M307.3 237H338v53h-83v235.8l-2.2.6c-3
       .8-42.5.8-51-.1l-6.8-.6V290h-83v-53l26.3-.3c14.4-.2 51.4-.2 82.2 0s69.8.3 86.8.3zm234.3
@@ -140,7 +140,7 @@
       </g>
     </svg>
 
-    <svg v-if="$props.name === 'git-skills'" height="50" width="100"
+    <svg v-if="$props.name === 'git'" height="50" width="100"
          viewBox="0 0 256 108" xmlns="http://www.w3.org/2000/svg"
          preserveAspectRatio="xMinYMin meet">
       <path d="M152.984 37.214c-5.597 0-9.765
@@ -317,7 +317,7 @@
     </svg>
 
 
-    <svg v-if="$props.name === 'git'" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 50 50">
+    <svg v-if="$props.name === 'gitHub'" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 50 50">
       <path
         d="M17.791 46.836A1.999 1.999 0 0 0
           19 45v-5.4c0-.197.016-.402.041-.61A.611.611 0 0 1
@@ -367,27 +367,15 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from "vue";
-
-export default defineComponent({
-  props: {
-    name: {
-      type: String,
-      default: "box"
-    },
-    width: {
-      type: [Number, String],
-      default: 18
-    },
-    height: {
-      type: [Number, String],
-      default: 18
-    },
-    color: {
-      type: String,
-      default: "currentColor"
-    }
+<script lang="ts" setup>
+defineProps({
+  name: {
+    type: String,
+    default: "box"
+  },
+  color: {
+    type: String,
+    default: "currentColor"
   }
 });
 </script>

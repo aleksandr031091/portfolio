@@ -17,10 +17,7 @@
   text-align: center;
   background-repeat: no-repeat;
   background-size: 150%;
-  background-image: linear-gradient(
-          rgba(47, 48, 58, 0.3),
-          rgba(47, 48, 58, 0.3)
-  ), url("/images/finger-640.png");
+  background-image: $linear_gradient, url("/images/finger-640.png");
   background-position: center;
 
   .title {
@@ -29,7 +26,7 @@
     padding: 5px 20px;
     font-size: 30px;
     line-height: 40px;
-    border: 3px solid $secondary_text_color;
+    border: 3px solid $text_color;
   }
 
   .description {
@@ -42,10 +39,8 @@
   .section_hero {
     height: calc(100vh - 50px);
     background-size: 120%;
-    background-image: linear-gradient(
-            rgba(47, 48, 58, 0.3),
-            rgba(47, 48, 58, 0.3)
-    ), url("/images/finger-640.png");
+    background-image: $linear_gradient,
+    url("/images/finger-640.png");
 
     .title {
       padding: 10px 40px;
@@ -61,19 +56,15 @@
 @include for-size(tablet) {
   .section_hero {
     background-size: contain;
-    background-image: linear-gradient(
-            rgba(47, 48, 58, 0.3),
-            rgba(47, 48, 58, 0.3)
-    ), url("/images/finger-1280.png")
+    background-image: $linear_gradient,
+    url("/images/finger-1280.png")
   }
 }
 
 @include for-size(desktop) {
   .section_hero {
-    background-image: linear-gradient(
-            rgba(47, 48, 58, 0.3),
-            rgba(47, 48, 58, 0.3)
-    ), url("/images/finger-1820.png");
+    background-image: $linear_gradient,
+    url("/images/finger-1820.png");
 
     .title {
       padding: 20px 70px;

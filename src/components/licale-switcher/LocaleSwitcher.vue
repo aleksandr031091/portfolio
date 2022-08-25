@@ -1,5 +1,5 @@
 <template>
-  <div
+  <button
     class="switch_btn"
     @click="onClickDropdown"
     v-click-outside="onClickOutside"
@@ -34,7 +34,7 @@
         </li>
       </ul>
     </Transition>
-  </div>
+  </button>
 </template>
 
 <script lang="ts" setup>
@@ -77,18 +77,16 @@ const onClickOutside = () => {
   position: relative;
   display: flex;
   align-items: center;
-  color: $secondary_text_color;
+  padding: 0;
   background-color: transparent;
   border: none;
-
+  cursor: pointer;
   .flag_icon {
     margin-right: 5px;
-    cursor: pointer;
   }
 
   .dropdown_icon {
     transition: 500ms;
-    cursor: pointer;
   }
 
   .isOpenList {

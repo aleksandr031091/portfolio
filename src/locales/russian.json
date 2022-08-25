@@ -1,7 +1,7 @@
 {
   "hero": {
     "title": "Касян Александр",
-    "description": "Front-end разработчик",
+    "description": "Фронт-енд-разработчик",
     "test": "asdasaasdasaaa111qwe"
   },
   "footer": {
@@ -59,6 +59,10 @@
     }
   ],
   "navigation": [
+    {
+      "path": "/",
+      "name": "Главная"
+    },
     {
       "path": "/projects",
       "name": "Проекты"

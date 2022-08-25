@@ -18,25 +18,41 @@
     </button>
 
     <navigation-mobile
-      :navList="tm('navigation')"
+      :navList="navList"
       :isOpenList="isOpenList"
     />
-    <navigation-desktop :navList="tm('navigation')" />
+    <navigation-desktop :navList="navList" />
 
   </nav>
 </template>
 
 <script lang="ts" setup>
-import BaseIcon from "@/components/UI/BaseIcon.vue";
-import { ref } from "vue";
+import { computed, ref } from "vue";
 
-import { useI18n } from "vue-i18n";
+import BaseIcon from "@/components/UI/BaseIcon.vue";
 import NavigationMobile from "@/components/navigation/NavigationMobile.vue";
 import NavigationDesktop from "@/components/navigation/NavigationDesktop.vue";
 
+
+import { useI18n } from "vue-i18n";
+import { useRoute } from "vue-router";
+
 const { tm } = useI18n();
+const route = useRoute();
 
 const isOpenList = ref(false);
+
+const navList = computed(() => {
+  const home = "/";
+  const contacts = "#footer";
+  const navList = JSON.parse(JSON.stringify(tm("navigation")));
+
+  if (route.path === "/projects") {
+    return navList.filter((el: { path: string, name: string }) => el.path === home || el.path === contacts);
+  }
+
+  return navList.filter((el: { path: string, name: string }) => el.path !== home);
+});
 
 const onClickMenu = () => {
   isOpenList.value = !isOpenList.value;
