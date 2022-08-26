@@ -64,8 +64,6 @@
 </template>
 
 <script lang="ts" setup>
-
-
 import BaseIcon from "@/components/UI/BaseIcon.vue";
 </script>
 

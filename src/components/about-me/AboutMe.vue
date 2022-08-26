@@ -1,7 +1,7 @@
 <template>
 
   <section id="about-me" class="section section_about">
-    <div class="container container_about">
+    <div class="container">
 
       <img class="for_image" src="images/robot.png" alt="my photo">
 
@@ -48,7 +48,7 @@
 
 }
 
-.container_about {
+
 
 
   .for_image {
@@ -62,7 +62,7 @@
     text-align: center;
 
   }
-}
+
 
 @include for-size(mobile) {
 
@@ -76,9 +76,7 @@
 
   }
 
-  .container_about {
-    position: relative;
-    height: 100%;
+
 
 
     .for_image {
@@ -101,7 +99,7 @@
       //background-color: green;
     }
   }
-}
+
 
 @include for-size(desktop) {
   .section_about {

@@ -76,9 +76,8 @@ const technologyList = [
     width: 100%;
     height: 100%;
     box-shadow: #22949A 0 0 0.25em, #22949A 0 0.25em 1em;
-    transform: translate(-20px, 20px);
-    z-index: -1;
     border-radius: 5px;
+    transform: translate(-20px, 20px);
   }
 
   &_item span:nth-child(3) {
