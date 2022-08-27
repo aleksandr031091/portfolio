@@ -7,7 +7,7 @@
     >
       <img
         class="card_image"
-        :src="`/images/${project.image}`"
+        :src="`${project.image}`"
         loading="lazy"
         alt="image of site"
       />

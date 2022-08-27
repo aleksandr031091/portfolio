@@ -10,49 +10,49 @@
   "projects": [
     {
       "title": "Обід",
-      "image": "lunch.jpg",
+      "image": "https://lh3.googleusercontent.com/pTsyqxWSwzeIdx8Nmu4FqgGbD0l8AtgJeRoPJZNKajRJRsvkOhPzCaYpfRJLqQLr64A5DG1FS87WLWmclXW-V2FY3ojHzZdMSpg0jz4AqLrjGzhvi8bPeEyO-Nzl-lg5ULXXUOph=w2400",
       "description": "Додаток для співробітників для замовлення їжі з різних кафе, особистий кабінет, замовлення другу, звіти за період, обліковий запис оператора, обліковий запис адміністратора",
       "technology": "HTML, CSS, SASS, NUXT",
       "githubLink": "fdsdavmsssl"
     },
     {
       "title": "Читання книг",
-      "image": "book-reading.jpg",
+      "image": "https://lh3.googleusercontent.com/kDDVWFVqY8Gcfjsl7x4wzi9Vs-85Wu_8UnamKYPUGOLYIBE8gDBkCMi7LobZv9igxrTdaD3A4IzM-2mhMvEnSSxGMixp5LPX30Piak-85H8OCdbFLFVv1LsVSLlRPLvb5IniDh2L=w2400",
       "description": "Додаток для читання книг, де можна поставити цілі щодо читання однієї або кількох книг на певний період, створити бібліотеку, графік прогресу, режим тренування, багатомовність",
       "technology": "HTML, CSS",
       "githubLink": "ываывфыаыва"
     },
     {
       "title": " Дітям подобається",
-      "image": "kids-like.jpg",
+      "image": "https://lh3.googleusercontent.com/VJyXKSJEXqiUrUKSD5ABDvouAZ8cMvg1lq60XzV7d3uhC7Y0iRJamzrVS-CMZNO8WyBoyyF5WPdSA7Ehb4VPxLpAZxytr2spxNj-v_xc34ORApPtg5fdjNqAwHs_JUgVtXSRVUhh=w2400",
       "description": "Додаток для дітей, який розвиває здорові звички, де батьки можуть створювати завдання на тиждень і винагороди за виконання завдань, дитина отримує бали, за які вона може вибрати винагороду",
       "technology": "HTML, CSS",
       "githubLink": "ываывфыаыва"
     },
     {
       "title": "Події",
-      "image": "events.jpg",
+      "image": "https://lh3.googleusercontent.com/KLRagSY6CfVf_SFNFQY4RiQDNTjS4CRzFMnrwDLtEp3zbW2C5bVaxpdNg2jLWXOxG6NVuFTReb7ybtYrdKAjq5zfM-qSwE5uVyjwmU0qHZOkF-xh7LYGZErJxsPqE7Hfp5Jl7kJ-=w2400",
       "description": "Додаток для пошуку крутих подій, по всьому світу, з можливістю покупки квитків",
       "technology": "HTML, CSS",
       "githubLink": "ываывфыаыва"
     },
     {
       "title": "Фільмотека",
-      "image": "filmoteka.jpg",
+      "image": "https://lh3.googleusercontent.com/tRTDsDXIcudKnpLwO5pBhSfuQ0YV26eEIzNLecjx9uMs1esbq3VYrNght3CS3dboOaS-8d8gog2DM_CXSqiNaNGuE3mj73x91v6xaFHzIOQrcw9g4pbUKC2kW86M60HxIrEctJIv=w2400",
       "description": "Додаток для пошуку фільмів, кожен може знайти потрібний фільм для себе, з рейтингом, описом і переглядом трейлера",
       "technology": "HTML, CSS",
       "githubLink": "ываывфыаыва"
     },
     {
       "title": "Морозиво",
-      "image": "ice-cream.jpg",
+      "image": "https://lh3.googleusercontent.com/z0bkSvhhKChkJIV5gwCl5rjhCiR3BxlYfjnVqiCxoFkKDk8g9b5bQbbmJ-FWOtpDHY1xyNARAq2rAoIyhcbW_uOdiB26dxPp80PKYhQfMxmuUGLlmqF7FrcYzO9vur_KnPkXlNCe=w2400",
       "description": "фыавыаыв",
       "technology": "HTML, CSS",
       "githubLink": "ываывфыаыва"
     },
     {
       "title": "Зоряні війни",
-      "image": "star-wars.jpg",
+      "image": "https://lh3.googleusercontent.com/4K0z4z8Fy9idEaPT4r_rl9akKKlRt-VVKS38r8mMRzZ8RFNraWsFgHXzkaMvlddiMhRxwLU5Bykrn-39lZfZ3M4g6O1zwmDqNgE978FfkkPdhe2aKZ4I4d8xTsyEq4LsQ45Y7nTq=w2400",
       "description": "",
       "technology": "vue",
       "githubLink": "fdsdavml"

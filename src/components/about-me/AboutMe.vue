@@ -3,18 +3,20 @@
   <section id="about-me" class="section section_about">
     <div class="container">
 
-      <img class="for_image" src="images/robot.png" alt="my photo">
+      <img
+        class="for_image"
+        src="https://lh3.googleusercontent.com/KFY1xBx1B8pPwutTDgX9ePaQK8m5Gt7L_oPeHBqPQDTXjfOZNvMy11tnhoPgTLlFEsLtmmYYakEnjADKkaAYjV48qNEOOAMOgbsM21_sz6g-NUOQoqbMiMTZLpZSalsQY4tLauYg=w2400"
+        alt="my photo"
+        width="500"
+      >
 
 
       <p class="my_description">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate esse eveniet hic illum, incidunt inventore
-        ipsam laboriosam nihil numquam officia officiis pariatur quia rem repellat, saepe temporibus velit voluptas! A
-        ipsa iure optio provident totam? Beatae cupiditate iste laudantium modi qui soluta! Alias architecto aspernatur
-        at
-        autem blanditiis harum labore, molestias nisi non officia porro quisquam quo suscipit velit vero voluptas
-        voluptatem. Commodi consequuntur cum distinctio dolor doloribus id nobis perferendis reiciendis sint sit sunt
-        tempore, vel? Alias animi consequuntur culpa dolorem eos eum eveniet ex iure nobis voluptate? Aperiam doloremque
-        dolores in laborum minus possimus quo sint soluta veniam!
+        I am a front-end developer looking for a full-time job in
+        in a new team that is focused on making everyday tasks, life and business easier, more productive and more
+        convenient.
+        I have six months of practical experience working in a team. I am a fast learner and ready for challenging
+        tasks.
       </p>
     </div>
   </section>
@@ -41,27 +43,23 @@
 
 <style lang="scss" scoped>
 .section_about {
-  overflow: hidden;
-  padding: 0;
 
-  box-shadow: inset 0px 10px 12px -12px $accent_color;
-
+  min-height: 100vh;
+  box-shadow: inset 0px 10px 10px -12px $accent_color;
 }
 
 
+.for_image {
+  position: static;
+}
 
+.my_description {
+  position: static;
+  padding: 0 10px;
+  color: $text_color;
+  text-align: center;
 
-  .for_image {
-    position: static;
-  }
-
-  .my_description {
-    position: static;
-    padding: 0 10px;
-    //color: $secondary_text_color;
-    text-align: center;
-
-  }
+}
 
 
 @include for-size(mobile) {
@@ -72,33 +70,20 @@
 @include for-size(tablet) {
 
   .section_about {
-    height: 100vh;
+
 
   }
 
 
+  .for_image {
 
-
-    .for_image {
-      position: absolute;
-      top: 0;
-      left: 0;
-      min-width: 500px;
-      height: 500px;
-      //background-color: grey;
-    }
-
-    .my_description {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      padding: 0 10px;
-
-      width: 500px;
-      height: 500px;
-      //background-color: green;
-    }
   }
+
+  .my_description {
+
+
+  }
+}
 
 
 @include for-size(desktop) {

@@ -10,49 +10,49 @@
   "projects": [
     {
       "title": "Обед",
-      "image": "lunch.jpg",
+      "image": "https://lh3.googleusercontent.com/pTsyqxWSwzeIdx8Nmu4FqgGbD0l8AtgJeRoPJZNKajRJRsvkOhPzCaYpfRJLqQLr64A5DG1FS87WLWmclXW-V2FY3ojHzZdMSpg0jz4AqLrjGzhvi8bPeEyO-Nzl-lg5ULXXUOph=w2400",
       "description": "Приложение для сотрудников на заказ еды из разных кафе, личный кабинет, заказ другу, отчеты за период, кабинет оператора, кабинет администратора",
       "technology": "HTML, CSS, SASS, NUXT",
       "githubLink": "fdsdavmsssl"
     },
     {
       "title": "Чтение книг",
-      "image": "book-reading.jpg",
+      "image": "https://lh3.googleusercontent.com/kDDVWFVqY8Gcfjsl7x4wzi9Vs-85Wu_8UnamKYPUGOLYIBE8gDBkCMi7LobZv9igxrTdaD3A4IzM-2mhMvEnSSxGMixp5LPX30Piak-85H8OCdbFLFVv1LsVSLlRPLvb5IniDh2L=w2400",
       "description": "Приложение для чтения книг, где можно поставить цели на чтение одной или нескольких книг за определенный период, создать библиотеку, график прогресса, режим тренировки, мультиязычность",
       "technology": "HTML, CSS",
       "githubLink": "ываываыва"
     },
     {
       "title": "Детям нравится",
-      "image": "Kids-Like.jpg",
+      "image": "https://lh3.googleusercontent.com/VJyXKSJEXqiUrUKSD5ABDvouAZ8cMvg1lq60XzV7d3uhC7Y0iRJamzrVS-CMZNO8WyBoyyF5WPdSA7Ehb4VPxLpAZxytr2spxNj-v_xc34ORApPtg5fdjNqAwHs_JUgVtXSRVUhh=w2400",
       "description": "Приложение для детей, развивающее здоровые привычки, где родители могут создавать задания на неделю и награды за выполнение заданий, ребенок получает баллы, за которые он может выбрать награду",
       "technology": "HTML, CSS",
       "githubLink": "ываываыва"
     },
     {
       "title": "События",
-      "image": "events.jpg",
+      "image": "https://lh3.googleusercontent.com/KLRagSY6CfVf_SFNFQY4RiQDNTjS4CRzFMnrwDLtEp3zbW2C5bVaxpdNg2jLWXOxG6NVuFTReb7ybtYrdKAjq5zfM-qSwE5uVyjwmU0qHZOkF-xh7LYGZErJxsPqE7Hfp5Jl7kJ-=w2400",
       "description": "Приложение для поиска крутых событий, по всему миру, с возможностью купить билеты",
       "technology": "javaScript",
       "githubLink": "ываываыва"
     },
     {
       "title": "Фильмотека",
-      "image": "filmoteka.jpg",
+      "image": "https://lh3.googleusercontent.com/tRTDsDXIcudKnpLwO5pBhSfuQ0YV26eEIzNLecjx9uMs1esbq3VYrNght3CS3dboOaS-8d8gog2DM_CXSqiNaNGuE3mj73x91v6xaFHzIOQrcw9g4pbUKC2kW86M60HxIrEctJIv=w2400",
       "description": "Приложение для поиска фильмов, каждый сможет найти нужный фильм для себя, с рейтингом, описанием и просмотром трейлера",
       "technology": "javaScript",
       "githubLink": "ываываыва"
     },
     {
       "title": "Мороженое",
-      "image": "ice-cream.jpg",
+      "image": "https://lh3.googleusercontent.com/z0bkSvhhKChkJIV5gwCl5rjhCiR3BxlYfjnVqiCxoFkKDk8g9b5bQbbmJ-FWOtpDHY1xyNARAq2rAoIyhcbW_uOdiB26dxPp80PKYhQfMxmuUGLlmqF7FrcYzO9vur_KnPkXlNCe=w2400",
       "description": "фыавыаыв",
       "technology": "HTML, CSS, sass",
       "githubLink": "ываываыва"
     },
     {
       "title": "Звездные войны",
-      "image": "star-wars.jpg",
+      "image": "https://lh3.googleusercontent.com/4K0z4z8Fy9idEaPT4r_rl9akKKlRt-VVKS38r8mMRzZ8RFNraWsFgHXzkaMvlddiMhRxwLU5Bykrn-39lZfZ3M4g6O1zwmDqNgE978FfkkPdhe2aKZ4I4d8xTsyEq4LsQ45Y7nTq=w2400",
       "description": "",
       "technology": "vue",
       "githubLink": "fdsdavml"

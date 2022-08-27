@@ -80,7 +80,7 @@ const onClickOutside = () => {
   padding: 0;
   background-color: transparent;
   border: none;
-  cursor: pointer;
+
   .flag_icon {
     margin-right: 5px;
   }
@@ -116,6 +116,13 @@ const onClickOutside = () => {
 
   .local_list {
     left: 0;
+  }
+}
+
+@include for-size(desktop) {
+
+  .switch_btn {
+    cursor: pointer;
   }
 }
 </style>
