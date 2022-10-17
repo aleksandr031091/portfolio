@@ -4,25 +4,26 @@
     <div class="container">
 
       <img
-        class="for_image"
-        src="https://lh3.googleusercontent.com/KFY1xBx1B8pPwutTDgX9ePaQK8m5Gt7L_oPeHBqPQDTXjfOZNvMy11tnhoPgTLlFEsLtmmYYakEnjADKkaAYjV48qNEOOAMOgbsM21_sz6g-NUOQoqbMiMTZLpZSalsQY4tLauYg=w2400"
+        class="image"
+        src="https://lh3.googleusercontent.com/CGveC4pRreouoeRc3AgsetQoRnRuiK11ZxTlkaTyzBE3BkAh29hz7xAiZrRcMCguWJFT3-6r47hF5oSeQlw_a2MzHmUBbAQyhON-QoRzdnjTc_xwI5vst5qb4gO-lw-g56E0ufH7=w2400"
         alt="my photo"
         width="500"
+        referrerpolicy="no-referrer"
       >
 
-
-      <p class="my_description">
-        I am a front-end developer looking for a full-time job in
-        in a new team that is focused on making everyday tasks, life and business easier, more productive and more
-        convenient.
-        I have six months of practical experience working in a team. I am a fast learner and ready for challenging
-        tasks.
+      <p class="description">
+        {{ tm("about-me.description") }}
       </p>
+
+      <SoftSkills />
     </div>
   </section>
 </template>
 
 <script lang="ts" setup>
+import { useI18n } from "vue-i18n";
+
+const { tm } = useI18n();
 // import {onMounted} from "vue";
 //
 // onMounted(() => {
@@ -39,54 +40,52 @@
 //   }
 //
 // }
+
+import SoftSkills from "@/components/skills/SoftSkills.vue";
 </script>
 
 <style lang="scss" scoped>
 .section_about {
-
   min-height: 100vh;
   box-shadow: inset 0px 10px 10px -12px $accent_color;
 }
 
-
-.for_image {
-  position: static;
+.image {
+  margin: 0 auto 50px;
 }
 
-.my_description {
+.description {
   position: static;
+  margin-bottom: 100px;
   padding: 0 10px;
-  color: $text_color;
+  font-size: 18px;
   text-align: center;
+  color: $text_color;
 
 }
 
 
 @include for-size(mobile) {
-
+  .section_about {
+    background-image: url("/images/robot.png");
+    background-repeat: no-repeat;
+    background-position: 60px 100%;
+  }
 
 }
 
 @include for-size(tablet) {
-
   .section_about {
-
-
-  }
-
-
-  .for_image {
-
-  }
-
-  .my_description {
-
-
+    background-position: 150% 100%;
   }
 }
 
 
 @include for-size(desktop) {
+  .image {
+
+  }
+
   .section_about {
     background-image: url("/images/quadrocopter-1658967_640-2.png");
     background-repeat: no-repeat;

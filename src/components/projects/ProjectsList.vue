@@ -10,6 +10,7 @@
         :src="`${project.image}`"
         loading="lazy"
         alt="image of site"
+        referrerpolicy="no-referrer"
       />
 
       <div class="card_box">
@@ -23,25 +24,28 @@
             <span class="technology_title">Technology:</span>
             {{ project.technology }}
           </p>
-          <div class="link_wrapper">
+
+          <ul class="list_link_wrapper">
             <a
+              tag="li"
               v-if="project.githubLink"
-              class="link"
+              class="list_link_item"
               :href="project.githubLink"
               target="_blank"
             >
-              code
+              {{ project.btnCodename }}
             </a>
 
             <a
-              v-if="project.githubLink"
-              class="link"
-              :href="project.githubLink"
+              tag="li"
+              v-if="project.siteLink"
+              class="list_link_item"
+              :href="project.siteLink"
               target="_blank"
             >
-              site
+              {{ project.btnAppName }}
             </a>
-          </div>
+          </ul>
         </div>
       </div>
     </li>
@@ -58,7 +62,10 @@ defineProps({
       title: String,
       technology: String,
       description: String,
-      githubLink: String
+      githubLink: String,
+      siteLink: String,
+      btnCodename: String,
+      btnAppName: String
     }]
   }
 });
@@ -102,7 +109,7 @@ defineProps({
   }
 
   .technology_description {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     font-size: 15px;
 
     .technology_title {
@@ -112,19 +119,24 @@ defineProps({
   }
 
 
-  .link_wrapper {
+  .list_link_wrapper {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 
-    .link {
+    .list_link_item {
       min-width: 100px;
       text-align: center;
       padding: 10px 20px;
       color: $text_color;
       background-color: $accent_color;
       background-image: $linear_gradient;
-      border-radius: 100%;
+      box-shadow: 1px 3px 5px rgba(255, 255, 255, 0.3);
+
+      &:first-child{
+        margin-bottom: 20px;
+      }
     }
+
   }
 }
 
@@ -180,7 +192,7 @@ defineProps({
       position: absolute;
       bottom: -250px;
       left: 0;
-      padding: 20px 10px 10px;
+      padding: 20px 15px 20px;
       width: 100%;
       background-image: $linear_gradient;
       transition: 500ms;
@@ -189,6 +201,33 @@ defineProps({
         margin-bottom: 15px;
       }
     }
+
+    .list_link_wrapper{
+      flex-direction: row;
+      justify-content: space-between;
+
+      .list_link_item {
+        min-width: 100px;
+        text-align: center;
+        padding: 10px 20px;
+        color: $text_color;
+        background-color: $accent_color;
+        background-image: $linear_gradient;
+        border-radius: 100%;
+        box-shadow: 1px 5px 5px rgba(255, 255, 255, 0.5), 0 0 16px rgba(255, 255, 255, 1) inset;
+
+        transition: 300ms;
+        &:hover{
+          color: $accent_color;
+          transform: scale(1.1);
+          box-shadow: 0px 1px 3px rgba(255, 255, 255, 0.5), 0 0 7px rgba(255, 255, 255, 1) inset;
+        }
+        &:first-child{
+          margin-bottom: 0;
+        }
+      }
+    }
+
   }
 }
 </style>

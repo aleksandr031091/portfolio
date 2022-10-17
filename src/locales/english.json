@@ -6,55 +6,102 @@
   "footer": {
     "profileTitle": "Profiles"
   },
+  "about-me": {
+    "description": "Hello, I'm Alexander!\nI love development, most of all I like to develop front-end applications. I have worked with many technologies\nI have good knowledge of HTML, CSS, JavaScript, now I like Vue.js\nI am a social person, communication and teamwork are important to me. I am currently looking for a full-time job with a new team that strives to make everyday tasks, life and business easier, more productive and more convenient.\nI have practical experience of working in a team using the Agile/Scrum methodology. I am a fast learner, ready for complex and non-standard tasks.",
+    "soft-skills": [
+      "Punctuation",
+      "Initiative",
+      "Creativity",
+      "Responsibility",
+      "Independence",
+      "Proactive",
+      "Purposeful",
+      "Friendly",
+      "Flexibility"
+    ],
+    "soft-skills-title": [
+      "S",
+      "O",
+      "F",
+      "T",
+      " ",
+      "S",
+      "K",
+      "I",
+      "L",
+      "L",
+      "S"
+    ]
+  },
   "projects": [
     {
       "title": "Lunch",
       "image": "https://lh3.googleusercontent.com/pTsyqxWSwzeIdx8Nmu4FqgGbD0l8AtgJeRoPJZNKajRJRsvkOhPzCaYpfRJLqQLr64A5DG1FS87WLWmclXW-V2FY3ojHzZdMSpg0jz4AqLrjGzhvi8bPeEyO-Nzl-lg5ULXXUOph=w2400",
-      "description": "Application for employees to order food from different cafes, personal account, order to a friend, reports for the period, operator account, administrator account",
+      "description": "Application for employees to order food from different cafes, personal account, order to a friend, reports for the period, operator account, administrator account.",
       "technology": "nuxt, sass, vuex, axios, vee-validate, date-picker,",
-      "githubLink": "fdsdavmsssl"
+      "siteLink": "http://lunch-front.dev.quartsoft.com/login",
+      "btnCodename": "Go to repository",
+      "btnAppName": "Go to app"
     },
     {
       "title": "Book reading",
       "image": "https://lh3.googleusercontent.com/kDDVWFVqY8Gcfjsl7x4wzi9Vs-85Wu_8UnamKYPUGOLYIBE8gDBkCMi7LobZv9igxrTdaD3A4IzM-2mhMvEnSSxGMixp5LPX30Piak-85H8OCdbFLFVv1LsVSLlRPLvb5IniDh2L=w2400",
-      "description": "Application for reading books, where you can set goals for reading one or more books for a certain period, create a library, progress graph, workout mode, multilingual",
-      "technology": "react, node, express, mongoDB, i18n",
-      "githubLink": "fdsdavml"
+      "description": "Application for reading books, where you can set goals for reading one or more books for a certain period, create a library, progress graph, workout mode, multilingual.",
+      "technology": "node, express, mongoDB, react, redux, styled-components, axios, i18n",
+      "githubLink": "https://github.com/DmytroGupanets/book-reading-client",
+      "siteLink": "https://book-reading-client.vercel.app",
+      "btnCodename": "Go to repository",
+      "btnAppName": "Go to app"
     },
     {
       "title": "KidsLike",
       "image": "https://lh3.googleusercontent.com/VJyXKSJEXqiUrUKSD5ABDvouAZ8cMvg1lq60XzV7d3uhC7Y0iRJamzrVS-CMZNO8WyBoyyF5WPdSA7Ehb4VPxLpAZxytr2spxNj-v_xc34ORApPtg5fdjNqAwHs_JUgVtXSRVUhh=w2400",
-      "description": "Application for children that develops healthy habits, where parents can create tasks for the week and rewards for completing tasks, the child receives points for which he can choose a reward",
-      "technology": "react",
-      "githubLink": "fdsdavml"
+      "description": "Application for children that develops healthy habits, where parents can create tasks for the week and rewards for completing tasks, the child receives points for which he can choose a reward.",
+      "technology": "react, redux, styled-components, axios, moment, i18n",
+      "githubLink": "https://github.com/tofikwest/KidsLikeApplication",
+      "siteLink": "https://magicdev-kidslike-application.netlify.app",
+      "btnCodename": "Go to repository",
+      "btnAppName": "Go to app"
     },
     {
       "title": "Events",
       "image": "https://lh3.googleusercontent.com/KLRagSY6CfVf_SFNFQY4RiQDNTjS4CRzFMnrwDLtEp3zbW2C5bVaxpdNg2jLWXOxG6NVuFTReb7ybtYrdKAjq5zfM-qSwE5uVyjwmU0qHZOkF-xh7LYGZErJxsPqE7Hfp5Jl7kJ-=w2400",
-      "description": "Application for finding cool events, around the world, with the ability to buy tickets",
-      "technology": "html, css",
-      "githubLink": "fdsdavml"
+      "description": "Application for finding cool events, around the world, with the ability to buy tickets.",
+      "technology": "sass, js, handlebars, basiclightbox, tui-pagination",
+      "githubLink": "https://github.com/aleksandr031091/team-project-events",
+      "siteLink": "https://aleksandr031091.github.io/team-project-events",
+      "btnCodename": "Go to repository",
+      "btnAppName": "Go to app"
     },
     {
       "title": "Filmoteka",
       "image": "https://lh3.googleusercontent.com/tRTDsDXIcudKnpLwO5pBhSfuQ0YV26eEIzNLecjx9uMs1esbq3VYrNght3CS3dboOaS-8d8gog2DM_CXSqiNaNGuE3mj73x91v6xaFHzIOQrcw9g4pbUKC2kW86M60HxIrEctJIv=w2400",
-      "description": "Application for finding movies, everyone can find the right movie for themselves, with ratings, descriptions and watching the trailer",
-      "technology": "html, css",
-      "githubLink": "fdsdavml"
+      "description": "Application for finding movies, everyone can find the right movie for themselves, with ratings, descriptions and watching the trailer.",
+      "technology": "sass, js, handlebars, basiclightbox, tui-pagination",
+      "githubLink": "https://github.com/capricornus44/filmoteka-team-project",
+      "siteLink": "https://capricornus44.github.io/filmoteka-team-project",
+      "btnCodename": "Go to repository",
+      "btnAppName": "Go to app"
     },
     {
       "title": "Ice-Cream",
       "image": "https://lh3.googleusercontent.com/z0bkSvhhKChkJIV5gwCl5rjhCiR3BxlYfjnVqiCxoFkKDk8g9b5bQbbmJ-FWOtpDHY1xyNARAq2rAoIyhcbW_uOdiB26dxPp80PKYhQfMxmuUGLlmqF7FrcYzO9vur_KnPkXlNCe=w2400",
-      "description": "wadasdfafdsf",
-      "technology": "html, css",
-      "githubLink": "fdsdavml"
+      "description": "Cafe network website, customer reviews, location, contacts.",
+      "technology": "html, css, sass, js",
+      "githubLink": "https://github.com/capricornus44/ice-cream-pixelpro",
+      "siteLink": "https://capricornus44.github.io/ice-cream-pixelpro",
+      "btnCodename": "Go to repository",
+      "btnAppName": "Go to app"
     },
     {
       "title": "Star wars",
       "image": "https://lh3.googleusercontent.com/4K0z4z8Fy9idEaPT4r_rl9akKKlRt-VVKS38r8mMRzZ8RFNraWsFgHXzkaMvlddiMhRxwLU5Bykrn-39lZfZ3M4g6O1zwmDqNgE978FfkkPdhe2aKZ4I4d8xTsyEq4LsQ45Y7nTq=w2400",
       "description": "",
-      "technology": "vue",
-      "githubLink": "fdsdavml"
+      "technology": "vue, sass, axios",
+      "githubLink": "https://github.com/aleksandr031091/vue",
+      "siteLink": "https://vue-six-rosy.vercel.app",
+      "btnCodename": "Go to repository",
+      "btnAppName": "Go to app"
     }
   ],
   "navigation": [

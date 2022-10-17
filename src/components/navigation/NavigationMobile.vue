@@ -41,13 +41,18 @@ defineProps({
   position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
   top: calc(100% + 10px);
   right: 0;
   width: 200px;
   z-index: 1;
 
+.router_link{
+  display: block;
+  width: 100%;
+}
   &_item {
+    text-align: end;
+    width: 100%;
     &:not(:last-child) {
       margin-bottom: 10px;
     }

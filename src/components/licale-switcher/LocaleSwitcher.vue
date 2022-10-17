@@ -17,8 +17,9 @@
 
     <Transition name="dropdown-fade">
       <ul
-        class="local_list"
+        :class="{local_list:true,bgColor: route.path === '/projects'}"
         v-if="isOpenList"
+
       >
         <li
           class="local_list_item hover_text"
@@ -40,29 +41,52 @@
 <script lang="ts" setup>
 import { useI18n } from "vue-i18n";
 import BaseIcon from "@/components/UI/BaseIcon.vue";
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
+import { useRoute } from "vue-router";
 
+const route = useRoute();
 const { locale, tm } = useI18n();
+
+
+onMounted(() => {
+  console.log(locale);
+  const lang = sessionStorage.getItem("locale")
+  if (lang) {
+
+    locale.value = lang
+
+  } else {
+    sessionStorage.setItem("locale", locale.value);
+  }
+});
+
 const onChangeLocale = (lang: string) => {
+
   switch (lang) {
     case "английский":
     case "англійська":
       locale.value = "english";
+      sessionStorage.setItem("locale", locale.value)
       break;
+    case "russian":
     case "русский":
     case "російська":
       locale.value = "russian";
+      sessionStorage.setItem("locale", locale.value)
       break;
+    case "ukraine":
     case "украинский":
     case "українська":
       locale.value = "ukraine";
+      sessionStorage.setItem("locale", locale.value)
       break;
     default:
-      locale.value = lang;
+      locale.value = 'english';
   }
 };
 
 const isOpenList = ref(false);
+
 const onClickDropdown = () => {
   isOpenList.value = !isOpenList.value;
 };
@@ -73,6 +97,13 @@ const onClickOutside = () => {
 </script>
 
 <style lang="scss" scoped>
+
+.bgColor {
+  color: $text_color;
+  background-color: rgb(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
 .switch_btn {
   position: relative;
   display: flex;
@@ -97,6 +128,7 @@ const onClickOutside = () => {
 .local_list {
   position: absolute;
   top: calc(100% + 10px);
+  padding: 0 10px 10px 0;
   z-index: 1;
 
   &_item {
@@ -111,6 +143,7 @@ const onClickOutside = () => {
     }
   }
 }
+
 
 @include for-size(tablet) {
 

@@ -7,55 +7,101 @@
   "footer": {
     "profileTitle": "Профили"
   },
+  "about-me": {
+    "description": "Привет, я Александр!\nЯ люблю разработку, больше всего мне нравится разрабатывать фронтенд приложения. Работал с многими технологиями, я\nимею хорошие знания HTML, CSS, JavaScript, сейчас мне нравиться Vue.js \nЯ социальный человек, для меня важно общение и работа в команде. Сейчас я в поиске постоянной работы, на полный рабочий день в новой команде, которая стремится сделать повседневные задачи, жизнь и бизнес проще, продуктивнее и удобнее.\nИмею практический опыт работы в команде по методологии Agile/Scrum. Я быстро учусь, готов к сложным и нестандартным задачам.",
+    "soft-skills": [
+      "Пунктуация",
+      "Инициатива",
+      "Креативность",
+      "Ответственность",
+      "Независимость",
+      "Проактивность",
+      "Целеустремленность",
+      "Дружелюбие",
+      "Гибкость"
+    ],
+    "soft-skills-title": [
+      "S",
+      "O",
+      "F",
+      "T",
+      " ",
+      "S",
+      "K",
+      "I",
+      "L",
+      "L",
+      "S"
+    ]
+  },
   "projects": [
     {
       "title": "Обед",
       "image": "https://lh3.googleusercontent.com/pTsyqxWSwzeIdx8Nmu4FqgGbD0l8AtgJeRoPJZNKajRJRsvkOhPzCaYpfRJLqQLr64A5DG1FS87WLWmclXW-V2FY3ojHzZdMSpg0jz4AqLrjGzhvi8bPeEyO-Nzl-lg5ULXXUOph=w2400",
-      "description": "Приложение для сотрудников на заказ еды из разных кафе, личный кабинет, заказ другу, отчеты за период, кабинет оператора, кабинет администратора",
-      "technology": "HTML, CSS, SASS, NUXT",
-      "githubLink": "fdsdavmsssl"
+      "description": "Приложение для сотрудников по заказу еды из разных кафе, личный кабинет, заказ другу, отчеты за период, аккаунт оператора, аккаунт администратора.",
+      "technology": "nuxt, sass, vuex, axios, vee-validate, date-picker,",
+      "siteLink": "http://lunch-front.dev.quartsoft.com/login",
+      "btnAppName": "Перейти в приложение"
     },
     {
       "title": "Чтение книг",
       "image": "https://lh3.googleusercontent.com/kDDVWFVqY8Gcfjsl7x4wzi9Vs-85Wu_8UnamKYPUGOLYIBE8gDBkCMi7LobZv9igxrTdaD3A4IzM-2mhMvEnSSxGMixp5LPX30Piak-85H8OCdbFLFVv1LsVSLlRPLvb5IniDh2L=w2400",
-      "description": "Приложение для чтения книг, где можно поставить цели на чтение одной или нескольких книг за определенный период, создать библиотеку, график прогресса, режим тренировки, мультиязычность",
-      "technology": "HTML, CSS",
-      "githubLink": "ываываыва"
+      "description": "Приложение для чтения книг, где можно поставить цели на чтение одной или нескольких книг за определенный период, создать библиотеку, график прогресса, режим тренировки, мультиязычность.",
+      "technology": "node, express, mongoDB, react, redux, styled-components, axios, i18n",
+      "githubLink": "https://github.com/DmytroGupanets/book-reading-client",
+      "siteLink": "https://book-reading-client.vercel.app",
+      "btnCodename": "Перейти в репозиторий",
+      "btnAppName": "Перейти в приложение"
     },
     {
       "title": "Детям нравится",
       "image": "https://lh3.googleusercontent.com/VJyXKSJEXqiUrUKSD5ABDvouAZ8cMvg1lq60XzV7d3uhC7Y0iRJamzrVS-CMZNO8WyBoyyF5WPdSA7Ehb4VPxLpAZxytr2spxNj-v_xc34ORApPtg5fdjNqAwHs_JUgVtXSRVUhh=w2400",
-      "description": "Приложение для детей, развивающее здоровые привычки, где родители могут создавать задания на неделю и награды за выполнение заданий, ребенок получает баллы, за которые он может выбрать награду",
-      "technology": "HTML, CSS",
-      "githubLink": "ываываыва"
+      "description": "Приложение для детей, развивающее здоровые привычки, где родители могут создавать задания на неделю и награды за выполнение заданий, ребенок получает баллы, за которые он может выбрать награду.",
+      "technology": "react, redux, styled-components, axios, moment, i18n",
+      "githubLink": "https://github.com/tofikwest/KidsLikeApplication",
+      "siteLink": "https://magicdev-kidslike-application.netlify.app",
+      "btnCodename": "Перейти в репозиторий",
+      "btnAppName": "Перейти в приложение"
     },
     {
       "title": "События",
       "image": "https://lh3.googleusercontent.com/KLRagSY6CfVf_SFNFQY4RiQDNTjS4CRzFMnrwDLtEp3zbW2C5bVaxpdNg2jLWXOxG6NVuFTReb7ybtYrdKAjq5zfM-qSwE5uVyjwmU0qHZOkF-xh7LYGZErJxsPqE7Hfp5Jl7kJ-=w2400",
-      "description": "Приложение для поиска крутых событий, по всему миру, с возможностью купить билеты",
-      "technology": "javaScript",
-      "githubLink": "ываываыва"
+      "description": "Приложение для поиска крутых событий, по всему миру, с возможностью купить билеты.",
+      "technology": "sass, js, handlebars, basiclightbox, tui-pagination",
+      "githubLink": "https://github.com/aleksandr031091/team-project-events",
+      "siteLink": "https://aleksandr031091.github.io/team-project-events",
+      "btnCodename": "Перейти в репозиторий",
+      "btnAppName": "Перейти в приложение"
     },
     {
       "title": "Фильмотека",
       "image": "https://lh3.googleusercontent.com/tRTDsDXIcudKnpLwO5pBhSfuQ0YV26eEIzNLecjx9uMs1esbq3VYrNght3CS3dboOaS-8d8gog2DM_CXSqiNaNGuE3mj73x91v6xaFHzIOQrcw9g4pbUKC2kW86M60HxIrEctJIv=w2400",
-      "description": "Приложение для поиска фильмов, каждый сможет найти нужный фильм для себя, с рейтингом, описанием и просмотром трейлера",
-      "technology": "javaScript",
-      "githubLink": "ываываыва"
+      "description": "Приложение для поиска фильмов, каждый сможет найти нужный фильм для себя, с рейтингом, описанием и просмотром трейлера.",
+      "technology": "sass, js, handlebars, basiclightbox, tui-pagination",
+      "githubLink": "https://github.com/capricornus44/filmoteka-team-project",
+      "siteLink": "https://capricornus44.github.io/filmoteka-team-project",
+      "btnCodename": "Перейти в репозиторий",
+      "btnAppName": "Перейти в приложение"
     },
     {
       "title": "Мороженое",
       "image": "https://lh3.googleusercontent.com/z0bkSvhhKChkJIV5gwCl5rjhCiR3BxlYfjnVqiCxoFkKDk8g9b5bQbbmJ-FWOtpDHY1xyNARAq2rAoIyhcbW_uOdiB26dxPp80PKYhQfMxmuUGLlmqF7FrcYzO9vur_KnPkXlNCe=w2400",
-      "description": "фыавыаыв",
-      "technology": "HTML, CSS, sass",
-      "githubLink": "ываываыва"
+      "description": "Сайт сети кафе, отзывы клиентов, локация, контакты.",
+      "technology": "html, css, sass, js",
+      "githubLink": "https://github.com/capricornus44/ice-cream-pixelpro",
+      "siteLink": "https://capricornus44.github.io/ice-cream-pixelpro",
+      "btnCodename": "Перейти в репозиторий",
+      "btnAppName": "Перейти в приложение"
     },
     {
       "title": "Звездные войны",
       "image": "https://lh3.googleusercontent.com/4K0z4z8Fy9idEaPT4r_rl9akKKlRt-VVKS38r8mMRzZ8RFNraWsFgHXzkaMvlddiMhRxwLU5Bykrn-39lZfZ3M4g6O1zwmDqNgE978FfkkPdhe2aKZ4I4d8xTsyEq4LsQ45Y7nTq=w2400",
       "description": "",
-      "technology": "vue",
-      "githubLink": "fdsdavml"
+      "technology": "vue, sass, axios",
+      "githubLink": "https://github.com/aleksandr031091/vue",
+      "siteLink": "https://vue-six-rosy.vercel.app",
+      "btnCodename": "Перейти в репозиторий",
+      "btnAppName": "Перейти в приложение"
     }
   ],
   "navigation": [

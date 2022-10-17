@@ -1,6 +1,6 @@
 <template>
   <the-header/>
-  <section class="section">
+  <section class="section test">
 
     <div class="container">
 
@@ -14,11 +14,8 @@
 <script lang="ts" setup>
 import ProjectsList from "@/components/projects/ProjectsList.vue";
 import TheFooter from "@/components/footer/TheFooter.vue";
-import {useI18n} from "vue-i18n";
 import TheHeader from "@/components/header/TheHeader.vue";
+import {useI18n} from "vue-i18n";
 const { tm } = useI18n()
 </script>
 
-<style lang="scss" scoped>
-
-</style>
