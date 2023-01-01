@@ -45,6 +45,7 @@ const technologyList = [
   row-gap: 50px;
   column-gap: 40px;
   padding: 0 25px;
+  z-index: 1;
 
   &_item {
     position: relative;

@@ -17,7 +17,7 @@
 
     <Transition name="dropdown-fade">
       <ul
-        :class="{local_list:true,bgColor: route.path === '/projects'}"
+        :class="{local_list: true, bgColor: route.path === '/projects'}"
         v-if="isOpenList"
 
       >
@@ -49,7 +49,6 @@ const { locale, tm } = useI18n();
 
 
 onMounted(() => {
-  console.log(locale);
   const lang = sessionStorage.getItem("locale")
   if (lang) {
 
@@ -129,7 +128,6 @@ const onClickOutside = () => {
   position: absolute;
   top: calc(100% + 10px);
   padding: 0 10px 10px 0;
-  z-index: 1;
 
   &_item {
     display: flex;

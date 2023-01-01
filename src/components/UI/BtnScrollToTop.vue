@@ -1,6 +1,10 @@
 <template>
   <button
-    :class="{scroll_button: isScrollPage}"
+    :class="{
+     scroll_button: isScrollPage,
+     hiddenBtn: route.path === '/',
+     zIndex: route.path !== '/'
+  }"
     @click="onhandleClick"
   >
     <base-icon
@@ -14,8 +18,10 @@
 <script setup>
 import BaseIcon from "@/components/UI/BaseIcon.vue";
 import { onBeforeUnmount, onMounted, ref } from "vue";
+import { useRoute } from "vue-router";
 
 const isScrollPage = ref(false);
+const route = useRoute();
 
 const onhandleClick = () => {
   window.scrollTo({
@@ -39,6 +45,14 @@ const handleScroll = () => {
 </script>
 
 <style lang="scss" scoped>
+.hiddenBtn {
+  visibility: hidden;
+}
+
+.zIndex{
+  z-index: 1;
+}
+
 .scroll_button {
   position: fixed;
   right: 20px;

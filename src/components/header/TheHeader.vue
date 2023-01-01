@@ -19,5 +19,6 @@ import LocaleSwitcher from "@/components/licale-switcher/LocaleSwitcher.vue";
   justify-content: space-between;
   padding-top: 25px;
   width: 100%;
+  z-index: 1;
 }
 </style>

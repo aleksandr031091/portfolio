@@ -1,6 +1,6 @@
 <template>
   <section
-    class="section"
+    class="section section_footer"
     id="footer"
   >
     <div class="container">
@@ -68,6 +68,9 @@ import BaseIcon from "@/components/UI/BaseIcon.vue";
 </script>
 
 <style lang="scss" scoped>
+.section_footer{
+  z-index: 1;
+}
 
 .contact_link_wrapper {
   display: flex;
