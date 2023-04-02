@@ -7,7 +7,7 @@ h6 {
   margin: 0;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -66,14 +66,27 @@ body {
   text-decoration: none;
 }
 
-.hover_text{
-  background: linear-gradient(to right, $accent_color, $accent_color 50%, $text_color 50%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 100%;
-  background-position: 100%;
-  transition: background-position 275ms ease;
-  &:hover {
-    background-position: 0 100%;
+.hover_text {
+  color: $text_color;
+
+  @include for-size(desktop) {
+    background: linear-gradient(to right, $accent_color, $accent_color 50%, $text_color 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+    &:hover {
+      background-position: 0 100%;
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

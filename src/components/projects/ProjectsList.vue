@@ -14,46 +14,51 @@
       />
 
       <div class="card_box">
-        <div>
-          <h3 class="card_box_title">{{ project.title }}</h3>
-          <p class="card_box_description">{{ project.description }}</p>
-        </div>
+        <h3 class="card_box_title">{{ project.title }}</h3>
+        <p class="card_box_description">{{ project.description }}</p>
 
-        <div>
-          <p class="technology_description">
-            <span class="technology_title">Technology:</span>
-            {{ project.technology }}
-          </p>
+        <p class="technology_description">
+          <span class="technology_title">Technology:</span>
+          {{ project.technology }}
+        </p>
 
-          <ul class="list_link_wrapper">
+        <ul class="list_link">
+          <li
+            class="list_link_item"
+            v-if="project.githubLink"
+          >
             <a
               tag="li"
-              v-if="project.githubLink"
-              class="list_link_item"
+              class="link"
               :href="project.githubLink"
               target="_blank"
             >
               {{ project.btnCodename }}
             </a>
+          </li>
 
+          <li
+            class="list_link_item"
+            v-if="project.siteLink"
+          >
             <a
               tag="li"
-              v-if="project.siteLink"
-              class="list_link_item"
+              class="link"
               :href="project.siteLink"
               target="_blank"
             >
               {{ project.btnAppName }}
             </a>
-          </ul>
-        </div>
+
+          </li>
+        </ul>
+
       </div>
     </li>
   </ul>
 </template>
 
 <script lang="ts" setup>
-
 defineProps({
   projects: {
     type: Array,
@@ -75,7 +80,12 @@ defineProps({
 
 <style lang="scss" scoped>
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: 7px;
+  max-height: 560px;
+
   border-radius: 5px;
   box-shadow: #22949A 0px 0px 0.25em, #22949A 0px 0.25em 1em;
 
@@ -93,7 +103,6 @@ defineProps({
   flex-direction: column;
   justify-content: space-between;
   padding: 10px 0;
-  min-height: 218px;
 
   &_title {
     font-weight: 500;
@@ -119,24 +128,51 @@ defineProps({
   }
 
 
-  .list_link_wrapper {
+  .list_link {
     display: flex;
     flex-direction: column;
 
-    .list_link_item {
-      min-width: 100px;
-      text-align: center;
-      padding: 10px 20px;
-      color: $text_color;
-      background-color: $accent_color;
-      background-image: $linear_gradient;
-      box-shadow: 1px 3px 5px rgba(255, 255, 255, 0.3);
 
-      &:first-child{
+    .list_link_item {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 1px;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 1px 3px $text_color, 0px 1px 3px $text_color;
+      transition: 500ms;
+
+      &:first-child {
         margin-bottom: 20px;
       }
     }
 
+    .list_link_item:hover {
+      box-shadow: none;
+    }
+
+    .list_link_item::before {
+      content: '';
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: linear-gradient($accent_color, $text_color);
+      animation: animate 5s linear infinite;
+    }
+
+    .link {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      padding: 10px 20px;
+      color: $text_color;
+      background: $background_color;
+      border-radius: 8px;
+      background-image: $linear_gradient;
+      transition: 300ms;
+    }
   }
 }
 
@@ -167,6 +203,7 @@ defineProps({
       margin: 0;
       padding: 0;
       width: 100%;
+      max-height: 100%;
       border-radius: 0;
       box-shadow: -25px 25px 118px 6px rgba(34, 148, 154, 1),;
 
@@ -202,27 +239,26 @@ defineProps({
       }
     }
 
-    .list_link_wrapper{
+    .list_link {
       flex-direction: row;
       justify-content: space-between;
 
-      .list_link_item {
-        min-width: 100px;
-        text-align: center;
-        padding: 10px 20px;
-        color: $text_color;
-        background-color: $accent_color;
-        background-image: $linear_gradient;
-        border-radius: 100%;
-        box-shadow: 1px 5px 5px rgba(255, 255, 255, 0.5), 0 0 16px rgba(255, 255, 255, 1) inset;
+      .list_link_item:first-child {
+        margin-bottom: 0;
+      }
 
-        transition: 300ms;
-        &:hover{
-          color: $accent_color;
+      .list_link_item::before {
+        width: 200px;
+        height: 200px;
+      }
+
+      .link {
+
+        &:hover {
           transform: scale(1.1);
-          box-shadow: 0px 1px 3px rgba(255, 255, 255, 0.5), 0 0 7px rgba(255, 255, 255, 1) inset;
         }
-        &:first-child{
+
+        &:first-child {
           margin-bottom: 0;
         }
       }

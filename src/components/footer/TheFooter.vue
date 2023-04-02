@@ -18,7 +18,14 @@
             class="contact_link hover_text"
             href="tel:+380664696686"
           >
-            +380664696686
+           Tel: +380664696686
+          </a>
+
+          <a
+            class="contact_link hover_text"
+            href="tel:+35796043568"
+          >
+           Tel: +35796043568
           </a>
         </div>
 

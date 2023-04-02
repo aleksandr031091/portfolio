@@ -19,7 +19,6 @@
       <ul
         :class="{local_list: true, bgColor: route.path === '/projects'}"
         v-if="isOpenList"
-
       >
         <li
           class="local_list_item hover_text"

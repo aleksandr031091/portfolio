@@ -71,7 +71,6 @@ const handleScroll = () => {
 
   &:hover {
     background-color: $accent_color;
-
   }
 }
 
