@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper">
+  <div class="main_wrapper">
     <div class="header_wrapper">
       <the-header />
     </div>
@@ -23,10 +23,12 @@ import TheHero from "@/components/hero/TheHero.vue";
 </script>
 
 <style lang="scss" scoped>
-.wrapper {
+.main_wrapper {
   position: sticky;
   top: 0;
   background-color: $accent_background_color;
+
+  z-index: -1;
 
   .header_wrapper {
     background-image: $linear_gradient;

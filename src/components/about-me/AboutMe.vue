@@ -28,24 +28,6 @@ const { tm } = useI18n();
 
 const description = computed(() => tm("about-me.description").toString().replace(/\\n/g, "<br> <br>"));
 
-
-// import {onMounted} from "vue";
-//
-// onMounted(() => {
-//   window.addEventListener('scroll', paralaxScroll)
-// })
-// const paralaxScroll = () => {
-//
-//   const myImage = document.querySelector('.for_image')
-//   const myDescription = document.querySelector('.my_description')
-//
-//   if (myImage && myDescription) {
-//     myImage.style.top = window.scrollY / 5 + 1 + 'px'
-//     myDescription.style.bottom = window.scrollY / 5 + 1 + 'px'
-//   }
-//
-// }
-
 import SoftSkills from "@/components/skills/SoftSkills.vue";
 import { computed } from "vue";
 </script>
