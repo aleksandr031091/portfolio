@@ -26,9 +26,9 @@ import TheHero from "@/components/hero/TheHero.vue";
 .main_wrapper {
   position: sticky;
   top: 0;
+  height: 100vh;
   background-color: $accent_background_color;
 
-  z-index: -1;
 
   .header_wrapper {
     background-image: $linear_gradient;
